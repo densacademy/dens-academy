@@ -1,0 +1,55 @@
+/* Mobile Searchbar */
+#mobile-navbar {
+    background: #07689F;
+    padding-bottom: 140px;
+}
+
+#mobile-navbar .row {
+    width: 100%;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    #mobile-navbar {
+        background: #07689F;
+        padding-bottom: 140px;
+    }
+
+    #slider {
+        margin-top: -50px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #mobile-navbar {
+        background: #07689F;
+        padding-bottom: 160px;
+    }
+
+    #slider {
+        margin-top: -60px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #slider {
+        margin-top: -60px !important;
+    }
+}
+
+#mobile-searchbar {
+    background: white;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 34px 7px 14px;
+    background-image: url('../img/icons/search-grey.png');
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    font-size: 14px;
+    color: #333;
+}
+
+#mobile-searchbar:focus, #mobile-searchbar:active {
+    outline: none !important;
+    box-shadow: none;
+}

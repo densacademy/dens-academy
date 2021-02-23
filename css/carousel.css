@@ -10,6 +10,12 @@
     }
   }
 
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    #slider .owl-nav {
+        display: none !important;
+    }
+  }
+
   .owl-nav {
       position: static;
       display: block;

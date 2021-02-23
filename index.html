@@ -11,40 +11,89 @@
     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
 
-    <div id="header"></div>
-    <div id="slider"></div>
-    <div id="pills"></div>
-    <div id="ads"></div>
-    <div id="popular"></div>
-    <div id="latest"></div>
-    <div id="packages"></div>
-    <div id="teachers"></div>
-    <div id="footer"></div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <div id="content">
+        <div id="header"></div>
+        <div id="header-mobile"></div>
+        <div id="slider"></div>
+        <div id="pills"></div>
+        <div id="categories-mobile"></div>
+        <div id="ads"></div>
+        <div id="popular"></div>
+        <div id="latest"></div>
+        <div id="packages"></div>
+        <div id="teachers"></div>
+        <div id="footer"></div>
+        <div id="bottom-menu"></div>
+    </div>
     
     <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src='vendor/breakpoint/breakpoint.min.js'></script>
 
     <script> 
         $(function(){
-          $("#header").load("components/header.html"); 
-          $("#slider").load("components/slider.html"); 
-          $("#pills").load("components/pills.html"); 
-          $("#ads").load("components/ads.html"); 
-          $("#popular").load("components/popular.html"); 
-          $("#latest").load("components/latest.html"); 
-          $("#packages").load("components/packages.html"); 
-          $("#teachers").load("components/teachers.html"); 
-          $("#footer").load("components/footer.html"); 
+
+            var loader = $('#preloader');
+            var page = $('#content');
+
+            // hide stuff on default
+            page.hide();
+            loader.show();
+
+            // show after delay
+            setTimeout(function(){
+                loader.hide();
+                page.fadeIn('slow')
+            }, 2000);//wait 2 seconds
+
+            // load components
+            $("#header").load("components/header.html"); 
+            $("#header-mobile").load("components/header-mobile.html"); 
+            $("#bottom-menu").load("components/bottom-menu.html"); 
+            $("#slider").load("components/slider.html"); 
+            $("#pills").load("components/pills.html"); 
+            $("#categories-mobile").load("components/categories-mobile.html"); 
+            $("#ads").load("components/ads.html"); 
+            $("#popular").load("components/popular.html"); 
+            $("#latest").load("components/latest.html"); 
+            $("#packages").load("components/packages.html"); 
+            $("#teachers").load("components/teachers.html"); 
+            $("#footer").load("components/footer.html"); 
+
+            // responsive mobile controller
+            function checkViewport() {
+                if ( xs == true || sm == true || md == true ) {
+                    $("#header").hide(); 
+                    $("#header-mobile").show(); 
+                    $("#pills").hide(); 
+                    $("#categories-mobile").show(); 
+                    $("#footer").hide(); 
+                    $("#bottom-menu").show();
+                }
+                else {
+                    $("#header").show(); 
+                    $("#header-mobile").hide(); 
+                    $("#categories-mobile").hide(); 
+                    $("#pills").show(); 
+                    $("#footer").show(); 
+                    $("#bottom-menu").hide();
+                }
+            }
+            checkViewport();
+            $(window).resize(checkViewport);
         });
     </script> 
-
-    
 
 </body>
 </html>
