@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Semibold';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('../fonts/Cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf');
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #343434;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    margin: auto;
+}

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../css/slider.css">
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="slider" class="owl-carousel">
+                <a href="#">
+                    <img src="../img/slider-1.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../img/slider-3.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../img/slider-2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script> 
+    $(function(){
+        $('#slider .owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            navText : ['<img class="icon left" src="../img/icons/left-chevron.png" alt="">','<img class="icon right" src="../img/icons/right-chevron.png" alt="">'],
+            dots: false,
+            items:1
+        })
+    })
+</script>

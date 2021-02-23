@@ -1,0 +1,24 @@
+.menu-item {
+    color: #343434 !important;
+    font-size: 14px;
+}
+
+.menu-item:hover {
+    color: #07689F !important;
+    text-decoration: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 48px !important;
+    float: left;
+    margin-right: 10px;
+}
+
+.menu-item p {
+    margin-top: revert;
+}

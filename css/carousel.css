@@ -1,0 +1,77 @@
+
+/* Owl Carousel Buttons */
+.owl-carousel {
+    position:relative;
+  }
+
+  @media screen and (max-width: 576px) {
+    .owl-nav {
+        display: none !important;
+    }
+  }
+
+  .owl-nav {
+      position: static;
+      display: block;
+  }
+
+  .owl-nav [class*=owl-] {
+    margin: 0 !important;
+    padding: 0 10px !important;
+    background: #fff !important;
+    background: none;
+    border-radius: 999px;
+    width: 36px !important;
+    height: 36px !important;
+    border: none !important;
+    font-size: 3em;
+    line-height: normal;
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
+  }
+
+  .owl-nav [class*=owl-]:hover {
+    background: #FFC93C !important;
+    transition: .3s;
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
+  }
+
+  .owl-prev, .owl-next {
+      position:absolute;
+   }
+
+   .owl-prev {
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   .owl-next {
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   .owl-carousel .icon {
+       width: 14px;
+       height: 14px;
+       position: absolute;
+   }
+
+   .owl-carousel .icon.left {
+    top: 11px;
+    left: 9px;
+   }
+
+   .owl-carousel .icon.right {
+    top: 11px;
+    right: 9px;
+   }
+
+   .owl-carousel button:focus, .owl-carousel button:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+ .owl-carousel .owl-nav .disabled {
+    display: none;
+  }

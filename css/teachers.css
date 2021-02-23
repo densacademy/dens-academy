@@ -1,0 +1,62 @@
+#teachers {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#teacher-heading {
+    margin-bottom: 30px;
+}
+
+#teacher-heading h3 {
+    color: #07689F;
+    font-family: 'Cocogoose', Arial, sans-serif;
+}
+
+.teacher {
+    padding: 15px 30px;
+}
+
+.teacher a:hover {
+    text-decoration: none;
+}
+
+.teacher:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.teacher-name {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #343434;
+    font-size: 18px;
+    display: block;
+}
+
+.teacher-expertise {
+    color: rgba(52, 52, 52, 0.5);
+    font-size: 14px;
+    display: block;
+}
+
+#teachers-viewall {
+    margin: 30px auto;
+} 
+
+.btn-viewall {
+    border: 1px solid #07689F;
+    background: none;
+    color: #07689F;
+    padding: 7px 36px;
+    font-size: 14px;
+}
+
+
+.btn-viewall:hover {
+    border: 1px solid #07689F;
+    background: #07689F;
+    color: #fff;
+    transition: .3s;
+}

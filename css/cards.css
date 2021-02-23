@@ -1,0 +1,123 @@
+.card-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.card-container-blue {
+    background: #A2D5F2;
+    padding: 1px 0;
+}
+
+.card-container h4 {
+    color: #343434;
+}
+
+.card-container-blue h4 {
+    color: #07689F;
+}
+
+.link-viewall {
+    color: #07689F;
+    font-size: 14px;
+}
+
+.link-viewall:hover {
+    color: #07689F;
+    transition: .3s;
+}
+
+.card-container .owl-carousel {
+    margin: 15px 0;
+}
+
+.card-container .owl-carousel .owl-stage-outer { 
+    overflow: visible;
+}
+    
+.card-container .owl-carousel .owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.card-container .owl-carousel .owl-item.active {
+    opacity: 1;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
+    border:none;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 10px 15px;
+}
+
+.card-title {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.card-title a {
+    color: #343434;
+}
+
+.card-title a:hover {
+    color: #07689F;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.card-teacher {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.card-packages {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.card-info {
+    color: #07689F;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-info .card-icon {
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block !important;
+    margin-right: 5px;
+    position: relative !important;
+}
+
+.card-price {
+    margin: 5px 0;
+    font-size: 20px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+    color: #343434;
+}
+
+.btn-detail {
+    font-size: 14px;
+    background: #2B90C9;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.btn-detail:hover {
+    background: #FFC93C;
+    color: #343434 !important;
+    transition: .3s;
+}

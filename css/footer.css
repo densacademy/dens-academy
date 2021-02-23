@@ -1,0 +1,52 @@
+#footer-menu {
+    background: #054B72;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#footer-menu h5 {
+    margin-bottom: 20px;
+}
+
+#footer-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer-menu ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#footer-menu ul li a {
+    color: #fff;
+    font-size: 15px;
+}
+
+#footer-menu ul li a:hover {
+    text-decoration: none;
+    transition: .3s;
+    color: #FFC93C;
+}
+
+#sosmed {
+    margin: 20px 0;
+}
+
+.icon-sosmed {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+#copyright {
+    background: #043E5F;
+}
+
+#copyright p {
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 14px;
+}

@@ -1,0 +1,38 @@
+#kategori-pills {
+    margin-top: 30px;
+}
+
+#kategori-pills .nav-pills {
+    margin-top: 30px;
+}
+
+#kategori-pills .nav-item {
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#kategori-pills .nav-link {
+    padding: 7px 24px;
+    background: #E6E6E6;
+    color: #9B9B9B !important;
+}
+
+#kategori-pills .nav-link:hover {
+    background: #FFC93C;
+    color: #343434 !important;
+    transition: .3s;
+}
+
+#kategori-pills .nav-link.active {
+    background: #FFC93C;
+    color: #343434 !important;
+}
+
+#kategori-pills .tab-content {
+    margin-top: 30px;
+}
+
+#kategori-pills .tab-content .fade {
+    transition: 4s;
+}
