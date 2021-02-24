@@ -1,0 +1,72 @@
+#navtab-carousel {
+    box-shadow: 0 0 10px 0 hsl(0deg 0% 74% / 75%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+#navtab .owl-stage-outer {
+    padding: 10px 0;
+}
+
+.navtab-tab {
+    border-radius: 15px;
+    border: 1px solid #B9B9B9;
+    padding: 7px 21px;
+    font-size: 14px;
+    color: #343434;
+    background: #fff;
+    width: auto;
+    display: block;
+    text-align: center;
+}
+
+.navtab-tab:hover {
+    border: 1px solid #2B90C9;
+    background: #2B90C9;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navtab-tab.aktif {
+    border: 1px solid #2B90C9;
+    background: #2B90C9;
+    border-radius: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .owl-nav {
+        display: block !important;
+    }
+  }
+
+#navtab .owl-next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#navtab .owl-prev {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#navtab-content .navtab-pane {
+    display: none;
+}
+
+#navtab-content .navtab-pane.aktif {
+    display: block;
+}
+
+/* Disable Anchor Jump */
+#navtab-content .navtab-pane::before {
+    content: "";
+    display: block;
+    height: 9999px;
+    margin-top: -9999px;
+ }

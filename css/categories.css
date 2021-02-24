@@ -1,4 +1,7 @@
 .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
     color: #343434 !important;
     font-size: 14px;
 }
@@ -8,9 +11,9 @@
     text-decoration: none;
 }
 
-.menu-item {
-    display: flex;
-    align-items: center;
+.menu-item.mobile {
+    display: block;
+    text-align: center;
 }
 
 .menu-item img {
@@ -19,6 +22,15 @@
     margin-right: 10px;
 }
 
+.menu-item.mobile img {
+    float: none;
+    margin: auto;
+}
+
 .menu-item p {
     margin-top: revert;
+}
+
+.menu-item.mobile p {
+    margin: 10px 0;
 }

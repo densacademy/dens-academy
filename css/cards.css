@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 576px) {
     .card-container .owl-carousel .owl-stage{
-        left:-60px !important;
+        left:-30px !important;
     }
     .card-container .owl-carousel .owl-item {
         opacity: 1;

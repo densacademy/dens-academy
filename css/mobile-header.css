@@ -8,6 +8,13 @@
     width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+    #slider {
+        margin-top: -60px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
 @media only screen and (min-width: 577px) and (max-width: 767px) {
     #mobile-navbar {
         background: #07689F;
@@ -30,12 +37,6 @@
     }
 }
 
-@media screen and (max-width: 576px) {
-    #slider {
-        margin-top: -60px !important;
-    }
-}
-
 #mobile-searchbar {
     background: white;
     border: none;
@@ -52,4 +53,10 @@
 #mobile-searchbar:focus, #mobile-searchbar:active {
     outline: none !important;
     box-shadow: none;
+}
+
+@media screen and (max-width: 576px) {
+    #mobile-searchbar {
+        margin-left: 15px;
+    }
 }

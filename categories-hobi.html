@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/categories.css">
+    <!-- Jika bukan halaman index -->
+    <link rel="stylesheet" href="css/mobile-header-alternative.css">
 </head>
 <body>
 
@@ -25,14 +27,16 @@
     <div id="content">
         <div id="header"></div>
         <div id="header-mobile"></div>
-        <div id="slider"></div>
-        <div id="categories-navigation"></div>
-        <div id="categories-navigation-mobile"></div>
-        <div id="ads"></div>
+        <div id="categories-hobi" class="container mt-5">
+            <h4>Hobi</h4>
+            <br>
+            <p>Hobi merupakan salah satu kategori di Dens Academy yang khusus memberikan pelajaran, info, dan tips untuk kamu yang ingin mendalami hobi kamu.
+                (Detail penjelasan ini masih dummy)</p>
+        </div>
+        <div id="hobi"></div>
+        <div id="separator"></div>
         <div id="popular"></div>
-        <div id="latest"></div>
-        <div id="packages"></div>
-        <div id="teachers"></div>
+        <br><br>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
@@ -56,37 +60,29 @@
             setTimeout(function(){
                 loader.hide();
                 page.fadeIn('slow')
-            }, 3000);//wait 2 seconds
+            }, 2000);//wait 2 seconds
 
             // load components
             $("#header").load("components/header.html"); 
             $("#header-mobile").load("components/header-mobile.html"); 
-            $("#bottom-menu").load("components/bottom-menu.html"); 
-            $("#slider").load("components/slider.html"); 
-            $("#categories-navigation").load("components/categories-navigation.html"); 
-            $("#categories-navigation-mobile").load("components/categories-navigation-mobile.html"); 
-            $("#ads").load("components/ads.html"); 
+            $("#separator").load("components/separator.html"); 
             $("#popular").load("components/popular.html"); 
-            $("#latest").load("components/latest.html"); 
-            $("#packages").load("components/packages.html"); 
-            $("#teachers").load("components/teachers.html"); 
+            $("#bottom-menu").load("components/bottom-menu.html");  
             $("#footer").load("components/footer.html"); 
 
-            // show or hide components based on viewport
+            // responsive mobile controller
             function checkViewport() {
                 if ( xs == true || sm == true || md == true ) {
                     $("#header").hide(); 
                     $("#header-mobile").show(); 
-                    $("#categories-navigation").hide(); 
-                    $("#categories-navigation-mobile").show(); 
+                    $("#hobi").load("components/categories/hobi-mobile.html"); 
                     $("#footer").hide(); 
                     $("#bottom-menu").show();
                 }
                 else {
                     $("#header").show(); 
                     $("#header-mobile").hide(); 
-                    $("#categories-navigation").show(); 
-                    $("#categories-navigation-mobile").hide(); 
+                    $("#hobi").load("components/categories/hobi.html"); 
                     $("#footer").show(); 
                     $("#bottom-menu").hide();
                 }

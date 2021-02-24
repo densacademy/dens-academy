@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="../css/navtab.css">
+
+<div class="container">
+        <div id="navtab-carousel" class="owl-carousel">
+            <a class="navtab-tab aktif" href="#tab-kelas-1">Kelas 1</a>
+            <a class="navtab-tab" href="#tab-kelas-2">Kelas 2</a>
+            <a class="navtab-tab" href="#tab-kelas-3">Kelas 3</a>
+            <a class="navtab-tab" href="#tab-kelas-4">Kelas 4</a>
+            <a class="navtab-tab" href="#tab-kelas-5">Kelas 5</a>
+            <a class="navtab-tab" href="#tab-kelas-6">Kelas 6</a>
+            <a class="navtab-tab" href="#tab-kelas-7">Kelas 7</a>
+            <a class="navtab-tab" href="#tab-kelas-8">Kelas 8</a>
+            <a class="navtab-tab" href="#tab-kelas-9">Kelas 9</a>
+            <a class="navtab-tab" href="#tab-kelas-10-ipa">Kelas 10 IPA</a>
+            <a class="navtab-tab" href="#tab-kelas-10-ips">Kelas 10 IPS</a>
+            <a class="navtab-tab" href="#tab-kelas-11-ipa">Kelas 11 IPA</a>
+            <a class="navtab-tab" href="#tab-kelas-11-ips">Kelas 11 IPS</a>
+        </div>
+        
+        <div id="navtab-content">
+            <div class="navtab-pane aktif" id="tab-kelas-1">
+                <div class="kurikulum"></div>
+            </div>
+            <div class="navtab-pane" id="tab-kelas-2">kelas 2</div>
+            <div class="navtab-pane" id="tab-kelas-3">kelas 3</div>
+            <div class="navtab-pane" id="tab-kelas-4">kelas 4</div>
+            <div class="navtab-pane" id="tab-kelas-5">kelas 5</div>
+            <div class="navtab-pane" id="tab-kelas-6">kelas 6</div>
+            <div class="navtab-pane" id="tab-kelas-7">kelas 7</div>
+            <div class="navtab-pane" id="tab-kelas-8">kelas 8</div>
+            <div class="navtab-pane" id="tab-kelas-9">kelas 9</div>
+        </div>
+</div>
+
+<script>
+    $(function(){
+        $('#navtab-carousel').owlCarousel({
+            items:8,
+            margin:10,
+            dots:false,
+            nav:true,
+            navText : ['<img class="icon left" src="../img/icons/left-chevron.png" alt="">','<img class="icon right" src="../img/icons/right-chevron.png" alt="">'],
+            responsive:{
+              0:{
+                  items:2,
+              },
+              576:{
+                  items:3,
+              },
+              768:{
+                  items:5,
+              },
+              992:{
+                  items:6,
+              },
+              1200: {
+                  items:7,
+              },
+              1368: {
+                  items: 8
+              }
+            }
+        })
+
+        // show other tabs on dropdown menu select
+        $('.navtab-tab').on('click', function() {
+            var getTabName = $(this).attr('href');  
+            $(getTabName).toggleClass('aktif').siblings().removeClass('aktif');
+        });
+
+        // load components based on viewport
+        function checkViewport() {
+            if ( xs == true || sm == true || md == true ) {
+                $(".kurikulum").load("../components/categories/kurikulum-mobile.html"); 
+            }
+            else {
+                $(".kurikulum").load("../components/categories/kurikulum.html"); 
+            }
+        }
+        checkViewport();
+        $(window).resize(checkViewport);
+
+    })
+</script>

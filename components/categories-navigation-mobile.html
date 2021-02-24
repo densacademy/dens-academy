@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="../css/categories-navigation-mobile.css">
+
+<div id="mobile-categories" class="container">
+    <h4>Cobain asiknya belajar di Dens Academy!</h4>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Pilihan Kategori
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#tab-kurikulum-mobile">Kurikulum</a>
+          <a class="dropdown-item" href="#tab-profesional-mobile">Profesional</a>
+          <a class="dropdown-item" href="#tab-hobi-mobile">Hobi</a>
+        </div>
+    </div>
+
+    <div class="categories">
+
+        <div id="tab-kurikulum-mobile" class="tab active">
+          <div class="row">
+            <div class="kurikulum-mobile"></div>
+          </div>
+        </div>
+        <div id="tab-profesional-mobile" class="tab">
+          <div class="row">
+            <div class="profesional-mobile"></div>
+          </div>
+        </div>
+        <div id="tab-hobi-mobile" class="tab">
+          <div class="row">
+            <div class="hobi-mobile"></div>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+  // get subcategories
+  $(".kurikulum-mobile").load("../components/categories/kurikulum-mobile.html"); 
+  $(".profesional-mobile").load("../components/categories/profesional-mobile.html"); 
+  $(".hobi-mobile").load("../components/categories/hobi-mobile.html"); 
+
+  // show other tabs on dropdown menu select
+  $('#mobile-categories .dropdown-item').on('click', function() {
+      var getTabName = $(this).attr('href');    
+      $(getTabName).toggleClass('active').siblings().removeClass('active');;
+  });
+</script>
