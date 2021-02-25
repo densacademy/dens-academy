@@ -1,6 +1,9 @@
 /* Mobile Searchbar */
 #mobile-navbar {
-    background: #07689F;
+    background-color: #07689F;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-header-mobile.png');
+    background-size: cover;
     padding-bottom: 140px;
 }
 
@@ -17,7 +20,10 @@
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
     #mobile-navbar {
-        background: #07689F;
+        background-color: #07689F;
+        background-repeat: no-repeat;
+        background-image: url('../img/bg-header-mobile.png');
+        background-size: cover;
         padding-bottom: 140px;
     }
 
@@ -28,7 +34,10 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #mobile-navbar {
-        background: #07689F;
+        background-color: #07689F;
+        background-repeat: no-repeat;
+        background-image: url('../img/bg-header-mobile.png');
+        background-size: cover;
         padding-bottom: 160px;
     }
 

@@ -27,16 +27,12 @@
     <div id="content">
         <div id="header"></div>
         <div id="header-mobile"></div>
-        <div id="categories-kurikulum" class="container mt-5">
-            <h4>Kurikulum</h4>
+        <div id="categories-profesional" class="container mt-5">
+            <h4>Desain Grafis</h4>
             <br>
-            <p>Kurikulum merupakan pelajaran - pelajaran dasar yang biasa di pelajari di sekolah. Pelajaran yang tersedia mulai dari pelajaran untuk SD, SMP, sampai dengan SMA. Pilih kelas kamu sebelum memilih mata pelajaran. (Detail penjelasan ini masih dummy)</p>
         </div>
-        <div id="navtab"></div>
-        <div id="navtab-pane"></div>
-        <div id="separator"></div>
-        <div id="popular"></div>
-        <br><br>
+        <div id="course-lists"></div>
+        <br><br><br><br>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
@@ -65,24 +61,28 @@
             // load components
             $("#header").load("components/header.html"); 
             $("#header-mobile").load("components/header-mobile.html"); 
-            $("#navtab").load("components/categories/navtab.html"); 
-            $("#navtab-pane").load("components/categories/navtab-pane.html"); 
-            $("#separator").load("components/separator.html"); 
-            $("#popular").load("components/popular.html"); 
             $("#bottom-menu").load("components/bottom-menu.html");  
             $("#footer").load("components/footer.html"); 
 
             // responsive mobile controller
             function checkViewport() {
-                if ( xs == true || sm == true || md == true ) {
+                if ( xs == true || sm == true ) {
                     $("#header").hide(); 
                     $("#header-mobile").show();  
+                    $("#course-lists").load("components/course-lists/profesional-mobile.html"); 
                     $("#footer").hide(); 
                     $("#bottom-menu").show();
+                } else if (md == true) {
+                    $("#header").hide(); 
+                    $("#header-mobile").show();  
+                    $("#course-lists").load("components/course-lists/profesional.html"); 
+                    $("#footer").hide(); 
+                    $("#bottom-menu").show();                    
                 }
                 else {
                     $("#header").show(); 
                     $("#header-mobile").hide(); 
+                    $("#course-lists").load("components/course-lists/profesional.html"); 
                     $("#footer").show(); 
                     $("#bottom-menu").hide();
                 }

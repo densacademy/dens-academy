@@ -1,0 +1,23 @@
+<div class="container">
+    <div id="navtab-content">
+        <div class="navtab-pane aktif" id="tab-kelas-1">
+            <div class="kurikulum"></div>
+        </div>
+        <div class="navtab-pane" id="tab-kelas-2">kelas 2</div>
+        <div class="navtab-pane" id="tab-kelas-3">kelas 3</div>
+        <div class="navtab-pane" id="tab-kelas-4">kelas 4</div>
+        <div class="navtab-pane" id="tab-kelas-5">kelas 5</div>
+        <div class="navtab-pane" id="tab-kelas-6">kelas 6</div>
+        <div class="navtab-pane" id="tab-kelas-7">kelas 7</div>
+        <div class="navtab-pane" id="tab-kelas-8">kelas 8</div>
+        <div class="navtab-pane" id="tab-kelas-9">kelas 9</div>
+    </div>
+</div>
+
+<script>
+        // show other tabs on dropdown menu select
+        $('.navtab-tab').on('click', function() {
+            var getTabName = $(this).attr('href');  
+            $(getTabName).toggleClass('aktif').siblings().removeClass('aktif');
+        });    
+</script>

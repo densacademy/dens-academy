@@ -47,6 +47,7 @@
     border-radius: 10px;
     box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
     border:none;
+    margin: 15px 0;
 }
 
 @media only screen and (max-width: 576px) {
@@ -130,4 +131,184 @@
     background: #FFC93C;
     color: #343434 !important;
     transition: .3s;
+}
+
+/* Learning Path */
+.learning-path {
+    margin: 15px 0;
+}
+
+.learning-path a:hover {
+    text-decoration: none;
+}
+
+.learning-path .image img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.learning-path .content {
+    width: 75%;
+}
+
+.learning-path .description {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.learning-path .description {
+    background-image: url('../img/icons/next.png');
+    background-size: auto 21px;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+@media screen and (max-width: 576px) {
+    .learning-path .description {
+        background-size: auto 18px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .learning-path .description {
+        background-size: auto 24px;
+    }
+}
+
+.learning-path .card-title {
+    font-size: 16px;
+    padding: 0;
+    margin: 7px 0 3px 0;
+    color: #343434;
+}
+
+.learning-path .card-total-courses {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.learning-path .card-teacher {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Course Lists */
+.course-lists {
+    margin: 15px 0;
+}
+
+.course-lists a {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    display: inherit;
+}
+
+.course-lists a:hover {
+    text-decoration: none;
+}
+
+.course-lists .image img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.course-lists .content {
+    width: 90%;
+}
+
+.course-lists .description {
+    padding: 7px 0 10px 0;
+}
+
+.course-lists .card-title {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0;
+    /* margin: 15px 0; */
+    color: #343434;
+}
+
+.course-lists .card-total-courses {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.course-lists .card-teacher {
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    /* margin: 5px 0; */
+}
+
+.course-lists .card-info {
+    line-height: 24px;
+}
+
+.course-lists .card-price {
+    margin: 2px 0;
+    font-size: 16px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+    color: #343434;
+}
+
+.course-lists .btn-detail {
+    font-size: 14px;
+    background: #2B90C9;
+    color: #fff;
+    margin: 0;
+}
+
+.course-lists .btn-detail:hover {
+    background: #FFC93C;
+    color: #343434 !important;
+    transition: .3s;
+}
+
+.course-lists .row-eq-height {
+    display: table;
+    width: 100%;
+}
+
+.course-lists .row-eq-height [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.course-lists .row-eq-height .image {
+    width: 40%;
+}
+
+.course-lists .row-eq-height .image img {
+    object-fit: cover;
+    min-height: 140px;
+}
+
+.course-lists .row-eq-height .description {
+    width: 60%;
+}
+
+@media screen and (max-width: 576px) {
+    .course-lists .row-eq-height .image {
+        width: 45%;
+    }
+
+    .course-lists .row-eq-height .description {
+        width: 55%;
+    }
+
+    .course-lists .card-price {
+        margin: 2px 0;
+        font-size: 14px;
+        font-family: 'Montserrat Semibold', Arial, sans-serif;
+        color: #343434;
+    }
 }
