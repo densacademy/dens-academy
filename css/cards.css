@@ -72,6 +72,7 @@
 .card-title {
     padding: 0;
     margin: 5px 0;
+    color: #343434;
 }
 
 .card-title a {
@@ -311,4 +312,24 @@
         font-family: 'Montserrat Semibold', Arial, sans-serif;
         color: #343434;
     }
+}
+
+/* Teacher Cards */
+.card-expertise {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.teacher-image {
+    padding: 10px 0 10px 30px;
+}
+
+.teacher-description .link-detail {
+    font-size: 14px;
+    color: #07689F;
+    margin: 0 0 7px 0;
+    padding: 0;
+    display: block;
 }
