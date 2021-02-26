@@ -1,0 +1,27 @@
+#summary {
+    background: #07689F;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#summary .info {
+    color: #fff;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+#summary .info .card-icon {
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block !important;
+    margin-right: 5px;
+    position: relative !important;
+}
+
+#summary .video-player {
+    border-radius: 15px;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}

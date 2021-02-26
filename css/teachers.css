@@ -53,7 +53,6 @@
     font-size: 14px;
 }
 
-
 .btn-viewall:hover {
     border: 1px solid #07689F;
     background: #07689F;
@@ -72,6 +71,23 @@
     margin-bottom: 120px;
 }
 
+.contact-card-mobile {
+    background: rgb(43,144,201);
+    background: linear-gradient(180deg, rgba(43,144,201,1) 0%, rgba(7,104,159,1) 100%);
+    color: #fff;
+    padding: 30px;
+    max-height: 180px;
+    margin-bottom: 160px;
+}
+
+.contact-card-mobile .teacher-image {
+    width: 160px;
+    border: 5px solid #fff;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
 .contact-card .teacher-image {
     position: absolute;
     left: 0;
@@ -84,12 +100,21 @@
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+.contact-card-mobile h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: block;
+}
+
 .contact-card .contact-person {
     position: absolute;
     top: 110px;
     left: 0;
     color: #343434;
     width: 100%;
+}
+
+.contact-card-mobile .contact-person {
+    color: #343434;
 }
 
 .contact-card .contact-person [class*=col-] {
@@ -106,11 +131,59 @@
 }
 
 @media screen and (max-width: 576px) {
-    .contact-card .contact-person .icon {
+    .contact-card-mobile {
+        padding: 15px;
+    }
+    .contact-card-mobile .tes.container {
+        padding: 0 !important;
+    }
+    .contact-card-mobile .contact-person .icon {
+        margin-right: 10px;
+        width: 18px;
+    }
+    .contact-card-mobile .contact-person span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    /* .contact-card .contact-person .icon {
         margin-right: 5px;
         width: 18px;
     }
     .contact-card .contact-person span {
         font-size: 13px;
+    } */
+
+    .contact-card-mobile .contact-person .icon {
+        margin-right: 10px;
+        width: 21px;
     }
+    .contact-card-mobile .contact-person span {
+        font-size: 14px;
+    }
+}
+
+/* Teacher Info */
+#teacher-info p {
+    font-size: 14px;
+}
+
+.teacher-description {
+    color: #343434;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.btn-teacher-info {
+    background: #FFC93C;
+    color: #343434 !important;
+    font-size: 13px;
+    padding: 7px 21px;
+}
+
+.btn-teacher-info:hover {
+    background: #07689F;
+    color: #fff !important;
+    transition: .3s;
 }

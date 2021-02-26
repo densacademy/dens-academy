@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/teachers.css">
+
     <!-- Jika bukan halaman index -->
     <link rel="stylesheet" href="css/mobile-header-alternative.css">
 </head>
@@ -34,7 +36,7 @@
             <p>Kalau kamu belajar di Dens Academy dijamin akan di jelasin sama pengajar-pengajar terbaik yang asik dalam mejelaskan pelajaran. Yuk kenalan sama
                 mereka disini. (Detail penjelasan dan foto-foto dibawah ini masih dummy)</p>
         </div>
-        <div id="popular"></div>
+        <div id="related"></div>
         <br>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
@@ -64,8 +66,7 @@
             // load components
             $("#header").load("components/header.html"); 
             $("#header-mobile").load("components/header-mobile.html"); 
-            $("#teacher-contact").load("components/teachers/contact.html"); 
-            $("#popular").load("components/popular.html"); 
+            $("#related").load("components/related.html"); 
             $("#bottom-menu").load("components/bottom-menu.html");  
             $("#footer").load("components/footer.html"); 
 
@@ -74,12 +75,14 @@
                 if ( xs == true || sm == true ) {
                     $("#header").hide(); 
                     $("#header-mobile").show();  
+                    $("#teacher-contact").load("components/teachers/contact-mobile.html"); 
                     $("#footer").hide(); 
                     $("#bottom-menu").show();
                 } 
                 else {
                     $("#header").show(); 
                     $("#header-mobile").hide(); 
+                    $("#teacher-contact").load("components/teachers/contact.html"); 
                     $("#footer").show(); 
                     $("#bottom-menu").hide();
                 }
