@@ -1,13 +1,13 @@
 #summary {
     background: #07689F;
     color: #fff;
-    padding: 60px 0;
+    padding: 35px 0;
 }
 
 #summary .info {
     color: #fff;
     font-size: 13px;
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 #summary .info .card-icon {
@@ -24,4 +24,13 @@
     -webkit-transform: translateZ(0);
     mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.js-read-more {
+    font-size: 14px;
+}
+
+.read-more__link {
+    font-size: 10px ;
+    margin: 10px 0 !important;
 }

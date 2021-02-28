@@ -1,0 +1,84 @@
+#course-syllabus {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#course-syllabus .info {
+    font-size: 14px;
+}
+
+#course-syllabus .accordion {
+    margin-top: 15px;
+}
+
+#course-syllabus .card {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+#course-syllabus .card:hover {
+    transform: none;
+    transition: none;
+}
+
+#course-syllabus .card-header {
+    border-top: 1px solid rgba(0,0,0,.125);
+    background-image: url('../img/icons/down.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+    cursor: pointer;
+}
+
+#course-syllabus .card-header:hover {
+    background-image: url('../img/icons/down_hover.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+}
+
+#course-syllabus .card-header h6 {
+    margin: auto;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#course-syllabus .card-header h6:hover {
+    text-decoration: none;
+    color: #07689F;
+}
+
+#course-syllabus .card-header .icon {
+    text-align: right;
+}
+
+#course-syllabus .card-body {
+    font-size: 14px;
+}
+
+#course-syllabus .card-body ul {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+#course-syllabus .card-body ul li {
+    list-style: none;
+    margin:10px 0;
+}
+
+#course-syllabus .card-body ul li a {
+    color: #343434;
+}
+
+#course-syllabus .card-body ul li a:hover {
+    text-decoration: none;
+    color: #07689F;
+    transition: .3s;
+}
+
+#course-syllabus .icon {
+    width: 18px;
+    margin-right: 10px;
+}

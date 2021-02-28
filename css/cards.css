@@ -50,6 +50,11 @@
     margin: 15px 0;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
 @media only screen and (max-width: 576px) {
     .card-container .owl-carousel .owl-stage{
         left:-30px !important;
@@ -333,3 +338,19 @@
     padding: 0;
     display: block;
 }
+
+/* Equal Height Cards */
+/* .card-container .owl-carousel .owl-stage{display: flex;}
+.card-container .card {
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+}
+.card-container .card-body {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+} */

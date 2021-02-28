@@ -1,0 +1,37 @@
+#buy-now {
+    background: #043E5F;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* display: none; */
+}
+
+#buy-now .price {
+    color: #FFC93C;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+    font-size: 24px;
+}
+
+#buy-now .btn-cart {
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 12px;
+    padding: 7px 24px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+#buy-now .btn-buy {
+    border: 1px solid #fff;
+    background: #043E5F;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 24px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+#buy-now .btn-buy:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #343434;
+    transition: .3s;
+}

@@ -33,10 +33,16 @@
     font-size: 3em;
     line-height: normal;
     box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
+    opacity: 0 !important;
+  }
+
+  .owl-carousel:hover .owl-nav [class*=owl-]{
+    opacity: 1 !important;
+    transition: .3s;
   }
 
   .owl-nav [class*=owl-]:hover {
-    background: #FFC93C !important;
+    background: #fff !important;
     transition: .3s;
     box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
   }

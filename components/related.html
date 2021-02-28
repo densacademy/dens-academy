@@ -1,4 +1,4 @@
-<div id="popular-courses" class="card-container container" >
+<div id="related-courses" class="card-container container" >
     <div class="row vertical-align">
         <div class="col-8">
             <h4>Pelajaran Lainnya</h4>
@@ -11,9 +11,9 @@
     <div class="cards-carousel owl-carousel">
         <!-- card -->
         <div class="card">
-            <a href="#"><img src="../img/courses/course15.png" class="card-img-top" alt=""></a>
+            <a href="../course-detail.html"><img src="../img/courses/course15.png" class="card-img-top" alt=""></a>
             <div class="card-body">
-                <h6 class="card-title"><a href="#">Matematika Peminatan</a></h6>
+                <h6 class="card-title"><a href="../course-detail.html">Matematika Peminatan</a></h6>
                 <p class="card-teacher">Dewi Nur</p>
                 <div class="card-info container">
                     <div class="row">
@@ -22,16 +22,16 @@
                     </div>
                 </div>
                 <span class="card-price">Rp. 100.000</span>
-                <a href="#" class="btn btn-block btn-detail">Detail</a>
+                <a href="../course-detail.html" class="btn btn-block btn-detail">Detail</a>
             </div>
         </div>
         <!-- card -->
 
         <!-- card -->
         <div class="card">
-            <a href="#"><img src="../img/courses/course16.png" class="card-img-top" alt=""></a>
+            <a href="../course-detail.html"><img src="../img/courses/course16.png" class="card-img-top" alt=""></a>
             <div class="card-body">
-                <h6 class="card-title"><a href="#">Jarak</a></h6>
+                <h6 class="card-title"><a href="../course-detail.html">Jarak</a></h6>
                 <p class="card-teacher">Ismawati</p>
                 <div class="card-info container">
                     <div class="row">
@@ -40,16 +40,16 @@
                     </div>
                 </div>
                 <span class="card-price">Rp. 200.000</span>
-                <a href="#" class="btn btn-block btn-detail">Detail</a>
+                <a href="../course-detail.html" class="btn btn-block btn-detail">Detail</a>
             </div>
         </div>
         <!-- card -->
 
         <!-- card -->
         <div class="card">
-            <a href="#"><img src="../img/courses/course17.png" class="card-img-top" alt=""></a>
+            <a href="../course-detail.html"><img src="../img/courses/course17.png" class="card-img-top" alt=""></a>
             <div class="card-body">
-                <h6 class="card-title"><a href="#">Bidang Ruang</a></h6>
+                <h6 class="card-title"><a href="../course-detail.html">Bidang Ruang</a></h6>
                 <p class="card-teacher">Supardinah</p>
                 <div class="card-info container">
                     <div class="row">
@@ -58,16 +58,16 @@
                     </div>
                 </div>
                 <span class="card-price">Rp. 200.000</span>
-                <a href="#" class="btn btn-block btn-detail">Detail</a>
+                <a href="../course-detail.html" class="btn btn-block btn-detail">Detail</a>
             </div>
         </div>
         <!-- card -->
 
         <!-- card -->
         <div class="card">
-            <a href="#"><img src="../img/courses/course18.png" class="card-img-top" alt=""></a>
+            <a href="../course-detail.html"><img src="../img/courses/course18.png" class="card-img-top" alt=""></a>
             <div class="card-body">
-                <h6 class="card-title"><a href="#">Proyeksi</a></h6>
+                <h6 class="card-title"><a href="../course-detail.html">Proyeksi</a></h6>
                 <p class="card-teacher">Dina R.</p>
                 <div class="card-info container">
                     <div class="row">
@@ -76,16 +76,16 @@
                     </div>
                 </div>
                 <span class="card-price">Rp. 200.000</span>
-                <a href="#" class="btn btn-block btn-detail">Detail</a>
+                <a href="../course-detail.html" class="btn btn-block btn-detail">Detail</a>
             </div>
         </div>
         <!-- card -->
 
         <!-- card -->
         <div class="card">
-            <a href="#"><img src="../img/courses/course15.png" class="card-img-top" alt=""></a>
+            <a href="../course-detail.html"><img src="../img/courses/course15.png" class="card-img-top" alt=""></a>
             <div class="card-body">
-                <h6 class="card-title"><a href="#">Sudut</a></h6>
+                <h6 class="card-title"><a href="../course-detail.html">Sudut</a></h6>
                 <p class="card-teacher">Budi Dermawan</p>
                 <div class="card-info container">
                     <div class="row">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <span class="card-price">Rp. 200.000</span>
-                <a href="#" class="btn btn-block btn-detail">Detail</a>
+                <a href="../course-detail.html" class="btn btn-block btn-detail">Detail</a>
             </div>
         </div>
         <!-- card -->
@@ -106,7 +106,7 @@
 
 <script>
     $(function(){
-        $('.cards-carousel').owlCarousel({
+        $('#related-courses .cards-carousel').owlCarousel({
             loop:false,
             margin:30,
             nav:true,
@@ -122,13 +122,10 @@
                     items:2,
                 },
                 768:{
-                    items:2,
+                    items:3,
                 },
                 1024: {
-                    items: 3,
-                },
-                1279:{
-                    items:4,
+                    items: 4,
                 },
             }
         })
