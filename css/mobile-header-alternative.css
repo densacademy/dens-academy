@@ -2,4 +2,15 @@
 #mobile-navbar {
     background: #07689F;
     padding-bottom: 10px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+@media screen and (max-width: 991px) {
+    #content {
+        margin-top: 65px;
+    }
 }

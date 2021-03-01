@@ -5,6 +5,29 @@
     /* display: none; */
 }
 
+@media screen and (max-width: 576px) {
+    #buy-now {
+        bottom: 65px;
+    }
+    #buy-now .price {
+        font-size: 18px !important;
+    }
+    #buy-now .btn-cart {
+        font-size: 10px !important;
+        padding: 7px 10px !important;
+    }
+    #buy-now .btn-buy {
+        font-size: 10px !important;
+        padding: 7px 10px !important;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    #buy-now {
+        bottom: 65px;
+    }
+}
+
 #buy-now .price {
     color: #FFC93C;
     font-family: 'Montserrat Semibold', Arial, sans-serif;

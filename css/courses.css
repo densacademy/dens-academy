@@ -31,6 +31,80 @@
 }
 
 .read-more__link {
-    font-size: 10px ;
-    margin: 10px 0 !important;
+    font-size: 14px ;
+    margin: 20px 0 !important;
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+/* Mobile */
+@media screen and (max-width: 991px) {
+    #summary {
+        background: #fff;
+        color: #343434;
+        padding: 35px 0 0 0;
+    }
+
+    #summary h5 {
+        margin-bottom: 20px;
+    }
+}
+
+#summary .detail {
+    margin: 30px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+#summary .detail h5 {
+    margin-bottom: 5px;
+}
+
+#summary .detail .teacher {
+    color: #9B9B9B;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+#summary .detail .teacher:hover {
+    transform: none;
+    transition: none;
+}
+
+#summary .detail-info {
+    font-size: 12px;
+}
+
+#summary .detail-info .price h5 {
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+#summary .icon-mobile {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#summary .icon-mobile-small {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#summary .info-mobile {
+    margin: auto 0;
+}
+
+#summary .description {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

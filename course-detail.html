@@ -7,6 +7,7 @@
     <title>Dens Academy</title>
 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/categories.css">
+    
     <!-- Jika bukan halaman index -->
     <link rel="stylesheet" href="css/mobile-header-alternative.css">
 </head>
@@ -28,11 +30,12 @@
         <div id="header"></div>
         <div id="header-mobile"></div>
         <div id="course-summary"></div>
+        <div id="course-summary-mobile"></div>
         <div id="add-cart"></div>
         <div id="teacher-info"></div>
         <div id="syllabus"></div>
         <div id="related"></div>
-        <br><br>
+        <br><br><br>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
@@ -45,8 +48,6 @@
     <!-- video js -->
     <link rel="stylesheet" href="vendor/videojs/video-js.css">
     <script src="vendor/videojs/video.min.js"></script>
-
-
 
     <script> 
         $(function(){
@@ -67,6 +68,7 @@
             // load components
             $("#header").load("components/header.html"); 
             $("#header-mobile").load("components/header-mobile.html"); 
+            $("#course-summary-mobile").load("components/courses/summary-mobile.html"); 
             $("#course-summary").load("components/courses/summary.html"); 
             $("#add-cart").load("components/courses/add-cart.html"); 
             $("#teacher-info").load("components/courses/teacher-info.html"); 
@@ -80,12 +82,16 @@
                 if ( xs == true || sm == true || md == true ) {
                     $("#header").hide(); 
                     $("#header-mobile").show();  
+                    $("#course-summary-mobile").show(); 
+                    $("#course-summary").hide(); 
                     $("#footer").hide(); 
                     $("#bottom-menu").show();
                 }
                 else {
                     $("#header").show(); 
                     $("#header-mobile").hide(); 
+                    $("#course-summary-mobile").hide(); 
+                    $("#course-summary").show(); 
                     $("#footer").show(); 
                     $("#bottom-menu").hide();
                 }

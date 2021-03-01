@@ -16,8 +16,8 @@ const ReadMore = (() => {
           content: document.querySelectorAll('.js-read-more'),
           originalContentArr: [],
           truncatedContentArr: [],
-          moreLink: "Baca Selengkapnya",
-          lessLink: "Tampilkan Lebih Sedikit",
+          moreLink: `Selengkapnya <i class="bi bi-chevron-down"></i>`,
+          lessLink: `Tampilkan Lebih Sedikit <i class="bi bi-chevron-up"></i>`,
         }
       },
  
