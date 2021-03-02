@@ -30,6 +30,7 @@ body {
 
 #content {
     overflow-x: hidden;
+    margin-top: 65px;
 }
 
 .container-fluid {

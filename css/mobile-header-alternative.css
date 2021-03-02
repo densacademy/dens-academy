@@ -11,6 +11,6 @@
 
 @media screen and (max-width: 991px) {
     #content {
-        margin-top: 65px;
+        margin-top: 65px !important;
     }
 }

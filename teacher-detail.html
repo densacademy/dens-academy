@@ -72,13 +72,13 @@
 
             // responsive mobile controller
             function checkViewport() {
-                if ( xs == true || sm == true ) {
+                if ( xs == true || sm == true || md == true ) {
                     $("#header").hide(); 
                     $("#header-mobile").show();  
                     $("#teacher-contact").load("components/teachers/contact-mobile.html"); 
                     $("#footer").hide(); 
                     $("#bottom-menu").show();
-                } 
+                }
                 else {
                     $("#header").show(); 
                     $("#header-mobile").hide(); 
