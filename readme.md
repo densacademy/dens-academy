@@ -6,3 +6,4 @@
 - 28 Februari 2020: Course Detail Page (Desktop)
 - 1 Maret 2020: Course Detail Page (Mobile)
 - 2 Maret 2020: QC
+- 3 Maret 2020: Perbaikan Slider, Image Size Optimization, QC

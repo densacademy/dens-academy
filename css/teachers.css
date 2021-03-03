@@ -61,6 +61,11 @@
 }
 
 /* Teacher Contact Card */
+#teacher-contact .card:hover {
+    transform: none;
+    transition: none;
+}
+
 .contact-card {
     background: rgb(43,144,201);
     background: linear-gradient(180deg, rgba(43,144,201,1) 0%, rgba(7,104,159,1) 100%);
