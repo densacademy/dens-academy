@@ -5,9 +5,16 @@
 #slider .owl-stage-outer {
     overflow: visible;
 }
+#slider .owl-item.active {
+    transform: scale(1.06);
+}
 
 #slider .owl-item {
-    transform: scale(0.85);
+    transform: scale(0.9);
+}
+
+#slider .owl-item img {
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -28,14 +35,6 @@
         opacity: 1;
         transition: opacity 500ms;
     }
-}
-
-#slider .owl-item.active {
-    transform: scale(1.1);
-}
-
-#slider .owl-item img {
-    border-radius: 15px;
 }
 
 @media screen and (max-width: 576px) {
@@ -78,3 +77,11 @@
     }
 } */
 
+/* Owl Carousel Nav */
+#slider .owl-nav .owl-prev {
+    left: 30px;
+}
+
+#slider .owl-nav .owl-next {
+    right: 30px;
+}
