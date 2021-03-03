@@ -1,3 +1,6 @@
+## Requirements
+Node.JS & Live Server
+
 ## Update Notes
 - 22-23 Februari 2020: Homepage (Desktop & Mobile)
 - 24 Februari 2020: Category Page Kurikulum, Category Page Profesional, Category Page Hobi (Desktop & Mobile)
@@ -6,4 +9,4 @@
 - 28 Februari 2020: Course Detail Page (Desktop)
 - 1 Maret 2020: Course Detail Page (Mobile)
 - 2 Maret 2020: QC
-- 3 Maret 2020: Perbaikan Slider, Image Size Optimization, QC
+- 3 Maret 2020: Perbaikan Slider, Image Size Optimization, View All Courses Page (Desktop & Mobile), View All Packages (Desktop & Mobile), Add to Cart (Desktop & Mobile)

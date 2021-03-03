@@ -254,6 +254,14 @@
     /* margin: 5px 0; */
 }
 
+.course-lists .card-packages {
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    /* margin: 5px 0; */
+}
+
 .course-lists .card-info {
     line-height: 24px;
 }

@@ -7,20 +7,55 @@
                 Rp. 100.000
             </div>
             <div class="buy col-7 nopadding text-right">
-                <a href="#" class="btn btn-cart"><i class="bi bi-cart-plus-fill"></i> Keranjang</a>
+                <a href="#" class="btn btn-cart" data-toggle="modal" data-target="#add-cart-modal"><i class="bi bi-cart-plus-fill"></i> Keranjang</a>
                 <a href="#" class="btn btn-buy">Beli Sekarang</a>
             </div>
         </div>
     </div>
 </nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="add-cart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+    <div class="modal-dialog modal-lg vertical-align-center" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Berhasil ditambahkan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+            <div class="card card-no-hover p-3">
+                <div class="row vertical-align">
+                    <div class="col-12 col-md-8">
+                        <img src="../../img/courses/course1.jpg" class="cart-image" alt="">
+                        <h6>Titik, Garis, Bidang</h6>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 text-lg-right">
+                        <a href="#" class="btn btn-cart">Lihat Keranjang</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- <script>
-    $(document).scroll(function() {
-        if ($(this).scrollTop() == 0) {
-            $("#buy-now").slideUp(400);
-        } else {
-            $("#buy-now").slideDown(600);
-        }
+            <!-- popular courses -->
+            <div id="popular" class="d-none d-lg-block"></div>
 
+        </div>
+        <div class="modal-footer d-block d-md-none ">
+            <div class="col-12 text-right">
+                <a href="#" class="btn btn-cart">Lihat Keranjang</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+ <script> 
+    $(function(){
+        $("#popular").load('../components/popular.html');
     });
-</script> -->
+</script> 

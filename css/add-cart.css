@@ -58,3 +58,118 @@
     color: #343434;
     transition: .3s;
 }
+
+/* Add to Cart Modal */
+ @media screen and (max-width: 576px) {
+    #add-cart-modal .modal-lg {
+        max-width: 360px;
+    }
+
+    #add-cart-modal .modal-content {
+        padding: 0 !important;
+    }
+
+    #add-cart-modal .modal-title {
+        position: relative !important;
+        /* left: 0;
+        transform: none; */
+    }
+
+    #add-cart-modal .modal-header {
+        padding-bottom: 0;
+    }
+}
+
+/*
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    #add-cart-modal .modal-lg {
+        max-width: 640px;
+        margin: auto;
+    }
+} */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #add-cart-modal .modal-lg {
+        max-width: 680px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1278px) {
+    #add-cart-modal .modal-lg {
+        max-width: 860px;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    #add-cart-modal .modal-lg {
+        max-width: 1200px;
+    }
+}
+
+#add-cart-modal .modal-header {
+    border: none;
+}
+
+#add-cart-modal .modal-title {
+    line-height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#add-cart-modal .modal-body {
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+#add-cart-modal .modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 25% / 25%);
+    padding: 10px 20px;
+}
+
+#add-cart-modal .card-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#add-cart-modal .card-no-hover {
+    transform: none;
+    transition: none;
+}
+
+#add-cart-modal .cart-image {
+    width: 96px;
+    margin-right: 10px;
+}
+
+#add-cart-modal h6 {
+    display: inline-block;
+}
+
+#add-cart-modal .btn-cart {
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 12px;
+    padding: 7px 24px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+    #add-cart-modal .btn-cart {
+        margin-left: 26%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    #add-cart-modal .btn-cart {
+        margin-left: 27%;
+    }
+}
+
+#add-cart-modal .modal-footer {
+    border: none;
+    padding: 0 0 15px 0;
+}
