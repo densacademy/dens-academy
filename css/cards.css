@@ -3,6 +3,21 @@
     margin-bottom: 60px;
 }
 
+@media only screen and (max-width: 576px) {
+    .card-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    .card-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+
 .card-container-blue {
     background: #A2D5F2;
     padding: 1px 0;

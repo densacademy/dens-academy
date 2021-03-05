@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/navtab.css">
+<link rel="stylesheet" href="/css/navtab.css">
 
 <div class="container">
         <div id="navtab-carousel" class="owl-carousel">
@@ -25,7 +25,7 @@
             margin:10,
             dots:false,
             nav:true,
-            navText : ['<img class="icon left" src="../img/icons/left-chevron.png" alt="">','<img class="icon right" src="../img/icons/right-chevron.png" alt="">'],
+            navText : ['<img class="icon left" src="/img/icons/left-chevron.png" alt="">','<img class="icon right" src="/img/icons/right-chevron.png" alt="">'],
             responsive:{
               0:{
                   items:2,
@@ -47,18 +47,6 @@
               }
             }
         })
-
-        // load components based on viewport
-        function checkViewport() {
-            if ( xs == true || sm == true || md == true ) {
-                $(".kurikulum").load("../components/categories/kurikulum-mobile.html"); 
-            }
-            else {
-                $(".kurikulum").load("../components/categories/kurikulum.html"); 
-            }
-        }
-        checkViewport();
-        $(window).resize(checkViewport);
 
     })
 </script>

@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dens Academy</title>
 
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/owl-carousel/assets/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/categories.css">
-    <!-- Jika bukan halaman index -->
-    <link rel="stylesheet" href="css/mobile-header-alternative.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/preloader.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/categories.css">
 </head>
 <body>
 
@@ -34,17 +32,16 @@
                 (Detail penjelasan ini masih dummy)</p>
         </div>
         <div id="hobi"></div>
+        <div id="hobi-mobile"></div>
         <div id="separator"></div>
         <div id="popular"></div>
-        <br><br>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
     
-    <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-    <script src='vendor/breakpoint/breakpoint.min.js'></script>
+    <script src="/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/owl-carousel/owl.carousel.min.js"></script>
 
     <script> 
         $(function(){
@@ -65,31 +62,13 @@
             // load components
             $("#header").load("components/header.html"); 
             $("#header-mobile").load("components/header-mobile.html"); 
+            $("#hobi-mobile").load("components/categories/hobi-mobile.html"); 
+            $("#hobi").load("components/categories/hobi.html"); 
             $("#separator").load("components/separator.html"); 
             $("#popular").load("components/popular.html"); 
             $("#bottom-menu").load("components/bottom-menu.html");  
             $("#footer").load("components/footer.html"); 
 
-            // responsive mobile controller
-            function checkViewport() {
-                if ( xs == true || sm == true || md == true ) {
-                    $("#header").hide(); 
-                    $("#header-mobile").show(); 
-                    $("#hobi").load("components/categories/hobi-mobile.html"); 
-                    $("#footer").hide(); 
-                    $("#bottom-menu").show();
-                }
-                else {
-                    $("#header").show(); 
-                    $("#header-mobile").hide(); 
-                    $("#hobi").load("components/categories/hobi.html"); 
-                    $("#footer").show(); 
-                    $("#bottom-menu").hide();
-                }
-            }
-
-            checkViewport();
-            $(window).resize(checkViewport);
         });
     </script> 
 

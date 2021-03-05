@@ -2,6 +2,7 @@
     <div id="navtab-content">
         <div class="navtab-pane aktif" id="tab-kelas-1">
             <div class="kurikulum"></div>
+            <div class="kurikulum-mobile"></div>
         </div>
         <div class="navtab-pane" id="tab-kelas-2">kelas 2</div>
         <div class="navtab-pane" id="tab-kelas-3">kelas 3</div>
@@ -15,6 +16,9 @@
 </div>
 
 <script>
+        $(".kurikulum").load("/components/categories/kurikulum.html"); 
+        $(".kurikulum-mobile").load("/components/categories/kurikulum-mobile.html"); 
+
         // show other tabs on dropdown menu select
         $('.navtab-tab').on('click', function() {
             var getTabName = $(this).attr('href');  

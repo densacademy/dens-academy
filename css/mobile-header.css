@@ -1,49 +1,16 @@
 /* Mobile Searchbar */
 #mobile-navbar {
-    background-color: #07689F;
-    background-repeat: no-repeat;
-    background-image: url('../img/bg-header-mobile.png');
-    background-size: cover;
-    padding-bottom: 140px;
+    background: #07689F;
+    padding-bottom: 10px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 #mobile-navbar .row {
     width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-    #slider {
-        margin-top: -60px !important;
-        margin-bottom: 15px !important;
-    }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-    #mobile-navbar {
-        background-color: #07689F;
-        background-repeat: no-repeat;
-        background-image: url('../img/bg-header-mobile.png');
-        background-size: cover;
-        padding-bottom: 140px;
-    }
-
-    #slider {
-        margin-top: -50px !important;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    #mobile-navbar {
-        background-color: #07689F;
-        background-repeat: no-repeat;
-        background-image: url('../img/bg-header-mobile.png');
-        background-size: cover;
-        padding-bottom: 160px;
-    }
-
-    #slider {
-        margin-top: -60px !important;
-    }
 }
 
 #mobile-searchbar {
@@ -72,6 +39,7 @@
 
 @media screen and (max-width: 991px) {
     #content {
-        margin-top: 0;
+        margin-top: 65px !important;
+        margin-bottom: 100px;
     }
 }
