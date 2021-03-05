@@ -1,68 +1,68 @@
-#slider {
-    margin: 30px 0;
+#slider-carousel {
+    margin: 50px 0 30px 0;
 }
 
-#slider .owl-stage-outer {
+#slider-carousel .owl-stage-outer {
     overflow: visible;
 }
-#slider .owl-item.active {
+#slider-carousel .owl-item.active {
     transform: scale(1.06);
 }
 
-#slider .owl-item {
+#slider-carousel .owl-item {
     transform: scale(0.9);
 }
 
-#slider .owl-item img {
+#slider-carousel .owl-item img {
     border-radius: 15px;
 }
 
 @media only screen and (max-width: 576px) {
-    #slider .owl-stage{
+    #slider-carousel .owl-stage{
         left:-10px !important;
     }
-    #slider .owl-item {
+    #slider-carousel .owl-item {
         opacity: 1;
         transition: opacity 500ms;
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    #slider .owl-stage{
+    #slider-carousel .owl-stage{
         left:0 !important;
     }
-    #slider .owl-item {
+    #slider-carousel .owl-item {
         opacity: 1;
         transition: opacity 500ms;
     }
 }
 
 @media screen and (max-width: 576px) {
-    #slider .owl-item.active {
+    #slider-carousel .owl-item.active {
         transform: scale(1);
     }
 
-    #slider .owl-item {
+    #slider-carousel .owl-item {
         transform: scale(0.97);
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-    #slider .owl-item.active {
+    #slider-carousel .owl-item.active {
         transform: scale(1.125);
     }
 
-    #slider .owl-item {
+    #slider-carousel .owl-item {
         transform: scale(0.875);
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    #slider .owl-item.active {
+    #slider-carousel .owl-item.active {
         transform: scale(1.075);
     }
 
-    #slider .owl-item {
+    #slider-carousel .owl-item {
         transform: scale(0.875);
     }
 }
@@ -78,10 +78,10 @@
 } */
 
 /* Owl Carousel Nav */
-#slider .owl-nav .owl-prev {
+#slider-carousel .owl-nav .owl-prev {
     left: 30px;
 }
 
-#slider .owl-nav .owl-next {
+#slider-carousel .owl-nav .owl-next {
     right: 30px;
 }

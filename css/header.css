@@ -32,7 +32,7 @@
 #icon-search {
     width: 14px;
     height: 14px;
-    background: url("../img/icons/search.png") no-repeat;
+    background: url("/img/icons/search.png") no-repeat;
     background-size: 14px;
     display: inline-block;
     cursor: pointer;
@@ -42,7 +42,7 @@
 #icon-cart {
     width: 21px;
     height: 21px;
-    background: url("../img/icons/cart.png") no-repeat;
+    background: url("/img/icons/cart.png") no-repeat;
     background-size: 21px;
     display: inline-block;
     cursor: pointer;
@@ -52,7 +52,7 @@
 #icon-cart:hover {
     width: 21px;
     height: 21px;
-    background: url("../img/icons/cart-hover.png") no-repeat;
+    background: url("/img/icons/cart-hover.png") no-repeat;
     background-size: 21px;
 }
 

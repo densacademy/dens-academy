@@ -178,7 +178,7 @@
 }
 
 .learning-path .description {
-    background-image: url('../img/icons/next.png');
+    background-image: url('/img/icons/next.png');
     background-size: auto 21px;
     background-repeat: no-repeat;
     background-position: right 20px center;

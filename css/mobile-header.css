@@ -1,6 +1,8 @@
 /* Mobile Searchbar */
 #mobile-navbar {
-    background: #07689F;
+    background-color: #07689F;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg-header-mobile.png');
     padding-bottom: 10px !important;
     position: fixed;
     top: 0;
@@ -18,7 +20,7 @@
     border: none;
     border-radius: 7px;
     padding: 7px 34px 7px 14px;
-    background-image: url('../img/icons/search-grey.png');
+    background-image: url('/img/icons/search-grey.png');
     background-size: auto 60%;
     background-repeat: no-repeat;
     background-position: right 10px center;

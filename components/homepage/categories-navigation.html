@@ -24,7 +24,7 @@
 
   <div class="tab-content">
     <div id="tab-kurikulum" class="tab-pane active">
-      <div class="menu-carousel owl-carousel">
+      <div class="categories-carousel owl-carousel">
           <a href="/subcategories-kurikulum.html" class="menu-item">
               <img src="/img/icons/kurikulum/fisika.png" alt="" class="img-fluid">
               <p>Fisika</p>
@@ -64,7 +64,7 @@
       </div>
     </div>
     <div id="tab-profesional" class="tab-pane fade">
-      <div class="menu-carousel owl-carousel">
+      <div class="categories-carousel owl-carousel">
         <a href="/learning-path-profesional.html" class="menu-item">
             <img src="/img/icons/profesional/android.png" alt="" class="img-fluid">
             <p>Android</p>
@@ -88,7 +88,7 @@
       </div>
     </div>
     <div id="tab-hobi" class="tab-pane fade">
-      <div class="menu-carousel owl-carousel">
+      <div class="categories-carousel owl-carousel">
         <a href="/course-lists-hobi.html" class="menu-item">
             <img src="/img/icons/hobi/berkebun.png" alt="" class="img-fluid">
             <p>Berkebun</p>
@@ -115,24 +115,4 @@
 
 </div>
 
-<script> 
-  $(function(){
-      $('.menu-carousel').owlCarousel({
-          loop:false,
-          margin:0,
-          nav:true,
-          navText : ['<img class="icon left" src="/img/icons/left-chevron.png" alt="">','<img class="icon right" src="/img/icons/right-chevron.png" alt="">'],
-          dots: false,
-          items:6,
-          responsive:{
-            768:{
-                items:5,
-            },
-            1368: {
-              items:6,
-            }
-          }
-
-    })
-  })
-</script>
+<script src="/js/carousel/categories.js"></script>
