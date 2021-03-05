@@ -1,0 +1,52 @@
+.accordion {
+    margin-top: 15px;
+}
+
+.accordion .card {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.accordion .card:hover {
+    transform: none;
+    transition: none;
+}
+
+.accordion .card-header {
+    border-top: 1px solid rgba(0,0,0,.125);
+    background-image: url('/img/icons/down.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.accordion .card-header:hover {
+    background-image: url('/img/icons/down_hover.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+}
+
+.accordion .card-header h6 {
+    margin: auto;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.accordion .card-header h6:hover {
+    text-decoration: none;
+    color: #07689F;
+}
+
+.accordion .card-header .icon {
+    text-align: right;
+}
+
+.accordion .card-body {
+    font-size: 14px;
+    padding: 20px;
+}

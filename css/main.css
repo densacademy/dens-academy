@@ -98,3 +98,15 @@ p {
         padding-left: 15px;
     }
 }
+
+/* Ordered Lists */
+ol {
+    margin: 0;
+    padding-left: 15px;
+}
+
+ol li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+}

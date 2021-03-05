@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/location.css">
+
+<style>
+.img-crop {
+    object-fit: cover;
+    width: 100%;
+    min-height: 180px;
+    border-radius: 10px;
+}
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="d-none d-lg-block col-lg-3">
+            <div id="list-group"></div>
+        </div>
+        <div class="col-12 col-lg-9">
+            <h4 class="mb-4">Tentang Kami</h4>
+
+            <img src="/img/about-us.jpg" class="img-crop img-fluid mb-4" alt="">
+
+            <p>Dens Academy merupakan lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor scelerisque
+                odio luctus molestie. Aenean lacus nunc, pulvinar a felis ut, tincidunt dignissim augue. Pellentesque habitant
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed cursus enim. Vivamus at
+                ante sed purus tincidunt aliquet nec nec sapien. (Detail penjelasan ini masih dummy)</p>
+
+            <br>
+
+            <h4 class="mb-4">Lokasi</h4>
+            <div id="location"></div>
+
+        </div>
+
+    </div>
+</div>
+
+<script> 
+    $("#list-group").load("components/static-pages/list-group.html"); 
+    $("#location").load("components/widgets/location.html"); 
+</script>

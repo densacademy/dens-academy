@@ -3,45 +3,35 @@
     background-color: #07689F;
     background-repeat: no-repeat;
     background-image: url('/img/bg-header-mobile.png');
-    padding-bottom: 10px !important;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
+    color: #fff;
 }
 
 #mobile-navbar .row {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-#mobile-searchbar {
-    background: white;
-    border: none;
-    border-radius: 7px;
-    padding: 7px 34px 7px 14px;
-    background-image: url('/img/icons/search-grey.png');
-    background-size: auto 60%;
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    font-size: 14px;
-    color: #333;
+#mobile-navbar h5 {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
 }
 
-#mobile-searchbar:focus, #mobile-searchbar:active {
-    outline: none !important;
-    box-shadow: none;
-}
-
-@media screen and (max-width: 576px) {
-    #mobile-searchbar {
-        margin-left: 15px;
-    }
+#mobile-navbar a {
+    color: #fff;
 }
 
 @media screen and (max-width: 991px) {
     #content {
-        margin-top: 65px !important;
+        margin-top: 54px !important;
         margin-bottom: 100px;
     }
 }

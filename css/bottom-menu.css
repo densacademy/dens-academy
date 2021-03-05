@@ -11,6 +11,7 @@
 #mobile-menu .nav-link {
     font-size: 14px;
     color: #ccc;
+    display: block;
 }
 
 #mobile-menu .nav-link:hover {

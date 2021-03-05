@@ -24,15 +24,8 @@
 
     <div id="content">
         <div id="header"></div>
-        <div id="header-mobile-homepage"></div>
-        <div id="slider"></div>
-        <div id="categories-navigation"></div>
-        <div id="categories-navigation-mobile"></div>
-        <div id="ads"></div>
-        <div id="popular"></div>
-        <div id="latest"></div>
-        <div id="packages"></div>
-        <div id="teachers"></div>
+        <div id="header-mobile"></div>
+        <div id="faq"></div>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
@@ -55,22 +48,14 @@
             setTimeout(function(){
                 loader.hide();
                 page.fadeIn('slow')
-            }, 3000);//wait 2 seconds
+            }, 2000);//wait 2 seconds
 
             // load components
-            $("#header").load("components/main/header.html"); 
-            $("#header-mobile-homepage").load("components/main/header-mobile-homepage.html"); 
-            $("#bottom-menu").load("components/main/bottom-menu.html"); 
-            $("#slider").load("components/homepage/slider.html"); 
-            $("#categories-navigation").load("components/homepage/categories-navigation.html"); 
-            $("#categories-navigation-mobile").load("components/homepage/categories-navigation-mobile.html"); 
-            $("#ads").load("components/homepage/ads.html"); 
-            $("#popular").load("components/widgets/popular.html"); 
-            $("#latest").load("components/widgets/latest.html"); 
-            $("#packages").load("components/widgets/packages.html"); 
-            $("#teachers").load("components/homepage/teachers.html"); 
-            $("#footer").load("components/main/footer.html"); 
-
+            $("#header").load("/components/main/header.html"); 
+            $("#header-mobile").load("/components/main/header-mobile.html"); 
+            $("#faq").load("/components/static-pages/faq.html"); 
+            $("#bottom-menu").load("/components/main/bottom-menu.html");  
+            $("#footer").load("/components/main/footer.html"); 
         });
     </script> 
 

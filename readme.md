@@ -10,3 +10,4 @@ Node.JS & Live Server
 - 1 Maret 2020: Course Detail Page (Mobile)
 - 2 Maret 2020: QC
 - 3 Maret 2020: Perbaikan Slider, Image Size Optimization, View All Courses Page (Desktop & Mobile), View All Packages (Desktop & Mobile), Add to Cart (Desktop & Mobile)
+- 5 Maret 2020: About Us Page, Terms & Conditions Page (Desktop & Mobile), Privacy Policy Page (Desktop & Mobile), FAQ Page (Desktop & Mobile), Contact Us Page (Desktop & Mobile)

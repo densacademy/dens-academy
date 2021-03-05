@@ -1,0 +1,25 @@
+.list-group {
+    padding: 20px;
+    /* box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%); */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.list-group-item.active {
+    background: #2B90C9;
+    color: #fff !important;
+    border: none;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    padding: 10px 20px;
+    border: none;
+    color: #343434;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    border-radius: 5px;
+}

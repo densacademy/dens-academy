@@ -3,7 +3,7 @@
 <nav id="mobile-menu" class="navbar navbar-expand fixed-bottom d-block d-lg-none">
     <ul class="navbar-nav nav-justified w-100">
       <li class="nav-item">
-        <a href="#" class="nav-link home active"><span class="icon-mobile-home"></span>Home</a>
+        <a href="/" class="nav-link home active"><span class="icon-mobile-home"></span>Home</a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link pelajaran"><span class="icon-mobile-book"></span>Pelajaran</a>
@@ -15,7 +15,13 @@
         <a href="#" class="nav-link akun"><span class="icon-mobile-akun"></span>Akun</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link lainnya"><span class="icon-mobile-lainnya"></span>Lainnya</a>
+        <a href="#" data-target="#sidebar-collapse" data-toggle="collapse" class="nav-link lainnya"><span class="icon-mobile-lainnya"></span>Lainnya</a>
       </li>
     </ul>
-  </nav>
+</nav>
+
+<div id="sidebar"></div>
+
+ <script> 
+      $("#sidebar").load('/components/main/sidebar.html');
+</script> 

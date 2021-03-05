@@ -1,0 +1,48 @@
+form label {
+    font-size: 12px;
+    color: #2B90C9;
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    background: #fff;
+    padding: 0 7px;
+    opacity: 0;
+}
+
+form .form-control {
+    font-size: 14px;
+    color: #9B9B9B;
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+form .form-control:focus {
+    border: 1px solid #2B90C9;
+    box-shadow: none;
+}
+
+form .form-control:focus::placeholder {
+    color: transparent;
+}
+
+form .form-control:focus + label {
+    opacity: 1 !important;
+    transition: .2s;
+}
+
+form .btn-yellow {
+    margin: 10px 0;
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 12px;
+    padding: 7px 31px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    form .btn-yellow {
+        width: 100%;
+    }
+}
