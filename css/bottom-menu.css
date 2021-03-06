@@ -2,6 +2,7 @@
     background: #fff;
     padding: 0;
     box-shadow: 0 0 20px 0 hsl(0deg 0% 74% / 75%);
+    z-index: 10;
 }
 
 #mobile-menu .nav-link.active {

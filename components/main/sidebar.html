@@ -1,19 +1,20 @@
 <link rel="stylesheet" href="/css/sidebar.css">
 
+<div class="sidebar-overlay"></div>
 
-<div id="sidebar-collapse" class="collapse d-lg-none">
-    <div class="sidebar">
+<div id="mySidebar" class="sidebar d-lg-none">
+    <div class="sidebar-inner">
         <div class="row vertical-align">
             <div class="col">
                 <img src="/img/logo.png" width="48" alt="">
             </div>
             <div class="col text-right">
-                <a href="#" class="sidebar-toggler" data-target="#sidebar-collapse" data-toggle="collapse"><img src="/img/icons/close.png" alt=""></a>
+                <a href="javascript:void(0)" onclick="closeNav()"><img src="/img/icons/close.png" alt=""></a>
             </div>
         </div>
-
-        <hr class="mt-4 mb-4">
-
+        
+        <hr class="mt-4 mb-2">
+        
         <ul>
             <li><a href="/about-us.html">Tentang Kami</a></li>
             <li><a href="/faq.html">FAQ</a></li>
@@ -22,5 +23,16 @@
             <li><a href="/contact-us.html">Kontak Kami</a></li>
         </ul>
 
+        <div class="social-media vertical-align">
+            <div class="center">
+                <a href="#"><img src="/img/icons/social-media/facebook-blue.png" class="icon" alt=""></a>
+                <a href="#"><img src="/img/icons/social-media/twitter-blue.png" class="icon" alt=""></a>
+                <a href="#"><img src="/img/icons/social-media/instagram-blue.png" class="icon" alt=""></a>
+            </div>
+
+        </div>
+
     </div>
 </div>
+
+<script src="/js/sidebar.js"></script>
