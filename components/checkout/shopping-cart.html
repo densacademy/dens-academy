@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="/css/shopping-cart.css">
+
+<div id="cart" class="container mt-5">
+    <div class="row">
+
+        <div class="col-12 col-lg-8">
+            <h4 class="mb-4">Keranjang</h4>
+
+            <!-- check all -->
+            <div class="row vertical-align mb-3">
+                <div class="col-6"><input class="select-all" type="checkbox"> Pilih semua</div>
+                <div class="col-6 text-right"><a href="#">Hapus</a></div>
+            </div>
+
+            <!-- cart item -->
+           <div class="cart-item">
+               <div class="row vertical-align">
+                    <div class="course-checkbox col-1"><input type="checkbox"></div>
+                    <div class="course-image col-3 col-lg-2"><img src="/img/courses/course1.jpg" class="img-fluid" alt=""></div>
+                    <div class="course-description col-8 col-lg-5">
+                        <h6 class="title">Titik, Garis, dan Bidang</h6>
+                        <p class="price">Rp.100.000</p>
+                        <p class="card-teacher">Dewi Nur</p>
+                        <div class="card-info container">
+                            <div class="row">
+                                <div class="col-4 col-md-3 nopadding"><img src="/img/icons/durasi.png" alt="" class="card-icon">8 Bab</div>
+                                <div class="col-8 col-md-9 nopadding"><img src="/img/icons/chapter.png" alt="" class="card-icon">100 Menit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-qty col-12 col-lg-4 pt-4 text-right align-self-end">
+                        <span class="mr-3">Kuota:</span>
+                        <div class="counter">
+                            <span class="minus"></span>
+                            <input class="qty" type="text" value="1"/>
+                            <span class="plus"></span>
+                        </div>
+                    </div>
+               </div>
+           </div>
+
+            <!-- cart item -->
+            <div class="cart-item">
+                <div class="row vertical-align">
+                     <div class="course-checkbox col-1"><input type="checkbox"></div>
+                     <div class="course-image col-3 col-lg-2"><img src="/img/courses/course2.jpg" class="img-fluid" alt=""></div>
+                     <div class="course-description col-8 col-lg-5">
+                         <h6 class="title">Titik, Garis, dan Bidang</h6>
+                         <p class="price">Rp.100.000</p>
+                         <p class="card-teacher">Dewi Nur</p>
+                         <div class="card-info container">
+                             <div class="row">
+                                 <div class="col-4 col-md-3 nopadding"><img src="/img/icons/durasi.png" alt="" class="card-icon">8 Bab</div>
+                                 <div class="col-8 col-md-9 nopadding"><img src="/img/icons/chapter.png" alt="" class="card-icon">100 Menit</div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="course-qty col-12 col-lg-4 pt-4 text-right align-self-end">
+                         <span class="mr-3">Kuota:</span>
+                         <div class="counter">
+                             <span class="minus"></span>
+                             <input class="qty" type="text" value="1"/>
+                             <span class="plus"></span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-none d-lg-block col-lg-4">
+            <div id="cart-summary" class="card p-4">
+                <h6>Ringkasan Pembelian</h6>
+                <div class="row">
+                    <div class="col-6">Total (2 Pelajaran)</div>
+                    <div class="col-6 text-right">Rp. 600.000</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">Potongan Voucher</div>
+                    <div class="col-6 text-right">Rp. 0</div>
+                </div>
+                <div class="total">
+                    <div class="row">
+                        <div class="col-6">Total Harga</div>
+                        <div class="col-6 text-right">Rp. 600.000</div>
+                    </div>
+                </div>
+                <a href="/checkout.html" class="btn btn-block btn-yellow">Lanjut ke Pembayaran</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div id="popular"></div>
+    </div>
+
+</div>
+
+<script>
+    $("#popular").load("/components/widgets/popular.html"); 
+</script>
+
+<script src="/js/shopping-cart.js"></script>

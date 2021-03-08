@@ -1,0 +1,30 @@
+#content {
+    margin-top: 0;
+}
+
+.page {
+    min-height: calc(100vh - 100px);
+}
+
+@media screen and (max-width: 1024px) {
+    .page {
+        min-height: calc(100vh - 50px);
+    }
+}
+
+.btn-yellow {
+    margin: 10px 0;
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 14px;
+    padding: 7px 31px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+.btn-yellow:hover {
+    background: #07689F;
+    border: 1px solid #07689F;
+    color: #fff;
+    transition: .3s;
+}

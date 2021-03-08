@@ -1,0 +1,31 @@
+@media screen and (max-width: 576px) {
+    .modal {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 50%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modal .btn-yellow {
+    margin: 10px 0;
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 14px;
+    padding: 7px 31px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+.modal .btn-yellow:hover {
+    background: #07689F;
+    border: 1px solid #07689F;
+    color: #fff;
+    transition: .3s;
+}

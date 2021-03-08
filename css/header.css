@@ -2,6 +2,7 @@
 #topmenu {
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.15);
     background: #fff;
+    font-size: 14px;
 }
 
 #logo {
@@ -20,6 +21,8 @@
 
 #searchbar.form-control {
     font-size: 14px;
+    padding: .375rem .75rem;
+    margin: 0;
 }
 
 #search {

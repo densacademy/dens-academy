@@ -36,9 +36,16 @@ form .btn-yellow {
     border: 1px solid #FFC93C;
     background: #FFC93C;
     color: #343434;
-    font-size: 12px;
+    font-size: 14px;
     padding: 7px 31px;
     font-family: 'Montserrat Semibold', Arial, sans-serif;
+}
+
+form .btn-yellow:hover {
+    background: #07689F;
+    border: 1px solid #07689F;
+    color: #fff;
+    transition: .3s;
 }
 
 @media screen and (max-width: 767px) {

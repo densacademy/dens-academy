@@ -1,0 +1,31 @@
+@media screen and (max-width: 576px) {
+    .modal {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .modal-dialog {
+        width: 240px;
+        margin: auto;
+    }
+}
+
+.modal-backdrop {
+    background-color: transparent;
+ }
+
+.modal-content {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body p {
+    color: #fff;
+    font-size: 14px;
+}

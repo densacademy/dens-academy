@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Roboto Light';
+    src: url('/fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
     font-family: 'Roboto Medium';
     src: url('/fonts/Roboto/Roboto-Medium.ttf');
 }
@@ -49,6 +54,19 @@ p {
     font-size: 14px;
 }
 
+a {
+    color: #2B90C9;
+}
+
+a:hover {
+    color: #2B90C9;
+    text-decoration: underline;
+}
+
+.cocogoose {
+    font-family: 'Cocogoose', Arial, sans-serif;
+}
+
 .nopadding {
     padding: 0;
 }
@@ -70,33 +88,6 @@ p {
 
 .center {
     margin: auto;
-}
-
-/* Bootstrap Vertical Align Center Modal */
-.vertical-alignment-helper {
-    display:table;
-    height: 100%;
-    width: 100%;
-    pointer-events:none;
-}
-.vertical-align-center {
-    display: table-cell;
-    vertical-align: middle;
-    pointer-events:none;
-}
-.modal-content {
-    width:inherit;
-    max-width:inherit; 
-    height:inherit;
-    margin: 0 auto;
-    pointer-events: all;
-}
-
-/* Fix Bootstrap Modal */
-@media screen and (max-width: 576px) {
-    .modal {
-        padding-left: 15px;
-    }
 }
 
 /* Ordered Lists */
