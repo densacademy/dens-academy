@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/shopping-cart.css">
+<link rel="stylesheet" href="/css/payment.css">
+
+<div id="payment-method" class="container mt-5">
+    <div class="row">
+
+        <div class="col-12 col-lg-8">
+            <h4 class="mb-4">Pembayaran</h4>
+            <h6>Pilih metode pembayaran</h6>
+
+            <!-- Virtual Account -->
+            <hr>
+            <h6>Transfer Virtual Account</h6>
+
+            <label>
+                <input type="radio" name="test" value="small" checked>
+                <img src="/img/payment/bca.png" class="">
+            </label>
+              
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="/img/payment/mandiri.png" class="">
+            </label>
+            
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="/img/payment/bni.png" class="">
+            </label>
+
+            <!-- Kartu Kredit -->
+            <hr>
+            <h6>Kartu Kredit</h6>
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="/img/payment/visa.png" class="">
+            </label>
+            
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="/img/payment/mastercard.png" class="">
+            </label>
+
+            <!-- Gopay -->
+            <hr>
+            <h6>Uang Elektronik</h6>
+
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="/img/payment/gopay.png" class="">
+            </label>
+
+        </div>
+
+        <div class="d-none d-lg-block col-lg-4">
+            <div id="summary"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $("#summary").load("/components/checkout/summary.html"); 
+</script>

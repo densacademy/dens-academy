@@ -1,0 +1,25 @@
+/* HIDE RADIO */
+#payment-method [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* IMAGE STYLES */
+#payment-method [type=radio] + img {
+    padding: 10px;
+    border: 1px solid #e9e9e9;
+    border-radius: 7px;
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* CHECKED STYLES */
+#payment-method [type=radio]:checked + img {
+    /* border: 1px solid #2B90C9; */
+    box-shadow: 0 0 10px 0 #2B90C9;
+}

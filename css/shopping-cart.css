@@ -93,6 +93,7 @@
 #cart-summary {
     font-family: 'Roboto Light', Arial, sans-serif;
     line-height: 28px;
+    font-size: 14px;
 }
 
 #cart-summary:hover {
@@ -107,6 +108,16 @@
     font-size: 18px;
     margin: 10px 0;
     padding: 10px 0;
+}
+
+#cart-summary .btn-white {
+    background: #fff;
+    color: #343434;
+    border: 1px solid #343434;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
 }
 
 #cart-summary .btn-yellow {
@@ -168,14 +179,14 @@
 }
 
 #cart-total .btn-buy:hover {
-    border: 1px solid #fff;
-    background: #fff;
-    color: #343434;
+    border: 1px solid #07689F;
+    background: #07689F;
+    color: #fff;
     transition: .3s;
 }
 
 /* Fix Padding Bottom */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     #content {
         padding-bottom: 60px;
     }
