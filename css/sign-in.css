@@ -39,6 +39,10 @@ body {
     height: 100%;
 }
 
+#social-sign-in {
+    padding-bottom: 30px;
+}
+
 #social-sign-in .icon {
     margin: auto 20px;
     display: inline-block;
