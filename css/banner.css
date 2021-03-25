@@ -1,0 +1,13 @@
+.banner-items {
+    margin: 60px 0;
+}
+
+.banner-items img {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 12796px) {
+    .banner-items {
+        margin: 30px 0 !important;
+    }
+}
