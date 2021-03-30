@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/vendor/jquery-ui/jquery-ui.min.css">
+<script src="/vendor/jquery-ui/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="/css/list-group.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/account.css">
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a href="/my-account.html" class="list-group-item list-group-item-action">Akun Saya</a>
+                <a href="/edit-profile.html" class="list-group-item list-group-item-action active">Edit Profil</a>
+                <a href="/redeem-voucher.html" class="list-group-item list-group-item-action">Redeem Voucher</a>
+                <a href="/transaction-history.html" class="list-group-item list-group-item-action">Histori Transaksi</a>
+                <a href="/change-password.html" class="list-group-item list-group-item-action">Ubah Kata Sandi</a>
+                <a href="/" class="list-group-item list-group-item-action">Keluar</a>
+            </div>
+        </div>
+        <div id="account" class="col-12 col-lg-9">
+            <h4 class="mb-4 d-none d-lg-block">Edit Profil</h4>
+            
+            <div class="card">
+
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <img src="/img/teachers/teacher4.jpg" class="rounded-circle img-fluid" alt="">
+                        <img src="/img/icons/upload-image.png" class="icon-upload" alt="">
+                    </div>
+                </div>
+
+                <form id="reset-form" class="mt-4" onsubmit="return false;">
+                    <div class="form-row">
+
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap">
+                            <label>Nama Lengkap</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <label>Email</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Nomor Handphone">
+                                <label>Nomor Handphone</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Instagram (opsional)">
+                                <label>Instagram (opsional)</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="Laki-laki">
+                                <label class="form-check-label">Laki-laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="Perempuan">
+                                <label class="form-check-label">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input id="tanggal" type="text" class="form-control" placeholder="Tanggal Lahir">
+                            <script>
+                                $('#tanggal').datepicker({
+                                    format: 'dd-mm-yyyy',
+                                    daysOfWeekDisabled: "0",
+                                    autoclose:true,
+                                    numberOfMonths: 1,
+                                    changeMonth: true,
+                                    changeYear: true,
+                                });
+                            </script>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="form-control" rows="3" placeholder="Alamat"></textarea>
+                            <label>Alamat</label>
+                        </div>
+
+                    </div>
+                
+                    <div class="text-right">
+                        <button class="btn btn-yellow">Simpan</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

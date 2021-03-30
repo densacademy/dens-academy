@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="/css/list-group.css">
+<link rel="stylesheet" href="/css/invoice.css">
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a href="/my-account.html" class="list-group-item list-group-item-action">Akun Saya</a>
+                <a href="/edit-profile.html" class="list-group-item list-group-item-action">Edit Profil</a>
+                <a href="/redeem-voucher.html" class="list-group-item list-group-item-action">Redeem Voucher</a>
+                <a href="/transaction-history.html" class="list-group-item list-group-item-action active">Histori Transaksi</a>
+                <a href="/change-password.html" class="list-group-item list-group-item-action">Ubah Kata Sandi</a>
+                <a href="/" class="list-group-item list-group-item-action">Keluar</a>
+            </div>
+        </div>
+        <div id="invoice" class="col-12 col-lg-9">
+            <h4 class="mb-4 d-none d-lg-block">Detail Transaksi</h4>
+            
+            <div class="card">
+
+                <div id="invoice-card" class="card">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/img/logo.png" id="logo" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6 text-right">
+                            <span>Invoice #</span>
+                            <br>
+                            <h5>INV-789987</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="status">
+                        <div class="row">
+                            <div class="col-4">
+                                <span>Tanggal:</span>
+                                <br class="d-block d-lg-none"><span>5 Februari 2021</span>
+                            </div>
+                            <div class="col-5">
+                                <span>Metode Pembayaran:</span>
+                                <br class="d-block d-lg-none"><span>Transfer Bank</span>
+                            </div>
+                            <div class="col-3">
+                                <span>Status:</span>
+                                <br class="d-block d-lg-none"><span>Lunas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="contact">
+                        <div class="row">
+                            <div class="col">Nama Lengkap</div>
+                            <div class="col">Muhammad Adi</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Email</div>
+                            <div class="col">muhammadadi@gmail.com</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Nomor Handphone</div>
+                            <div class="col">081213141516</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Jumlah Pelajaran</div>
+                            <div class="col">2 Pelajaran</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="items" class="mb-3">
+                        <div class="row">
+                            <div class="d-none d-sm-block col-sm-1">
+                                #
+                            </div>
+                            <div class="col col-sm-5">
+                                Nama Pelajaran
+                            </div>
+                            <div class="col col-sm-3">
+                                Jumlah Kuota
+                            </div>
+                            <div class="col col-sm-3">
+                                Harga
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-none d-sm-block col-sm-1">
+                                1
+                            </div>
+                            <div class="col col-sm-5">
+                                Titik, Garis, dan Bidang
+                            </div>
+                            <div class="col col-sm-3">
+                                1
+                            </div>
+                            <div class="col col-sm-3">
+                                Rp. 100.000
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-none d-sm-block col-sm-1">
+                                2
+                            </div>
+                            <div class="col col-sm-5">
+                                Proyeksi
+                            </div>
+                            <div class="col col-sm-3">
+                                5
+                            </div>
+                            <div class="col col-sm-3">
+                                Rp. 500.000
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-left">
+                            Total
+                            </div>
+                            <div class="col-6 text-right">
+                                Rp. 600.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <button class="btn btn-outline">Kembali</button>
+                    <button class="btn btn-yellow"><img src="/img/icons/pdf-receipt.png" height="14" alt=""> Unduh</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

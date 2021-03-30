@@ -53,3 +53,32 @@ form .btn-yellow:hover {
         width: 100%;
     }
 }
+
+form .form-check-label {
+    margin: 10px 0;
+    padding: 10px 15px;
+    position: relative;
+    color: #9B9B9B;
+    opacity: 1;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: none;
+    font-size: 14px;
+}
+
+form .custom-select {
+    font-size: 14px;
+    color: #9B9B9B;
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    min-height: 43px;
+}
+
+/* Form Helper */
+.form-row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}

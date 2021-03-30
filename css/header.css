@@ -88,6 +88,7 @@
 
 #topmenu .btn-signup:hover {
     background: #FFC93C;
+    border: 1px solid #FFC93C;
     color: #343434 !important;
 }
 

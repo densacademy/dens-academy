@@ -1,0 +1,91 @@
+#invoice .card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    transform: none;
+    padding: 20px;
+    font-size: 14px;
+    margin:0;
+}
+
+@media screen and (max-width: 991px) {
+    #invoice .card {
+        border: none;
+        padding: 0;
+    }
+
+    #invoice-card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        transform: none !important;
+        padding: 20px !important;
+    }
+}
+
+#logo {
+    max-width: 60px;
+}
+
+#status .row span:nth-child(3) {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+#contact .row {
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+}
+
+#contact .row div:nth-child(2) {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+    text-align: right;
+}
+
+#items .row {
+    padding:10px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#items .row:nth-child(even)  {
+    background-color: #F5F5F5;
+}
+
+#items .row div:nth-child(1) {
+    text-align: center;
+}
+
+#items .row div:nth-child(3) {
+    text-align: center;
+}
+
+#items .row div:nth-child(4) {
+    text-align: right;
+}
+
+#items .row:last-of-type {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+.btn-outline {
+    border: 1px solid #B9B9B9;
+    color: #343434;
+    font-size: 12px;
+    padding: 7px 31px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+    background: white;
+}
+
+.btn-outline:hover {
+    background: #FFC93C;
+    border: 1px solid #FFC93C;
+    color: #343434 !important;
+}
+
+.btn-yellow {
+    margin: 10px 0;
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
+    font-size: 12px;
+    padding: 7px 31px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+}

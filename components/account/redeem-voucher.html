@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/list-group.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/account.css">
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a href="/my-account.html" class="list-group-item list-group-item-action">Akun Saya</a>
+                <a href="/edit-profile.html" class="list-group-item list-group-item-action">Edit Profil</a>
+                <a href="/redeem-voucher.html" class="list-group-item list-group-item-action active">Redeem Voucher</a>
+                <a href="/transaction-history.html" class="list-group-item list-group-item-action">Histori Transaksi</a>
+                <a href="/change-password.html" class="list-group-item list-group-item-action">Ubah Kata Sandi</a>
+                <a href="/" class="list-group-item list-group-item-action">Keluar</a>
+            </div>
+        </div>
+        <div id="account" class="col-12 col-lg-9">
+            <h4 class="mb-4 d-none d-lg-block">Redeem Voucher</h4>
+            
+            <div class="card">
+                <h5 class="text-center">Masukkan Kode Voucher</h5>
+
+                <form id="reset-form" class="mt-4 mb-4" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Kode Voucher">
+                            <label>Kode Voucher</label>
+                        </div>
+                    </div>
+                
+                    <div class="text-right">
+                        <button class="btn btn-yellow">Redeem</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="d-none d-lg-block">
+    <br><br><br><br>
+</div>

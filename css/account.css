@@ -1,0 +1,95 @@
+/* My Account Desktop */
+#account .contact-card {
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+#account .contact-card h3 {
+    margin: 15px 0;
+}
+
+#account .contact-person {
+    top: 100px;
+}
+
+@media screen and (min-width: 1200px) {
+    #account .contact-person {
+        display: -webkit-box !important;
+    }
+}
+
+#account .card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    transform: none;
+    padding: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    #account .card {
+        border: none;
+        padding: 0;
+    }
+}
+
+#account table {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#account table tr td:nth-child(1) {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+    padding: 15px 0 15px 40px;
+    width: 35%;
+}
+
+#account table tr td:nth-child(2) {
+    width: 65%;
+    padding: 15px 20px 15px 0;
+}
+
+/* My Account Mobile */
+@media screen and (max-width: 767px) {
+    #account .contact-card-mobile {
+        max-height: 140px;
+        margin-bottom: 160px;
+    }
+
+    #account .contact-person {
+        display: block !important;
+    }
+}
+
+#account .list-group {
+    border: none;
+    padding: 0;
+}
+
+#account .list-group-item {
+    border-top: 1px solid #E6E6E6;
+    margin: 0;
+    padding: 15px 0;
+    background-image: url('../img/icons/next.png');
+    background-size: 14px;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+#account .list-group-item a {
+    color: #343434;
+}
+
+#account .list-group-item a:hover {
+    text-decoration: none;
+    color: #07689f;
+}
+
+/* Edit Profile */
+#account .icon-upload {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
