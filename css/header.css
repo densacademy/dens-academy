@@ -113,3 +113,12 @@
 #topmenu .dropdown-item:last-child {
     border-bottom: none;
 }
+
+#topmenu a {
+    color: #343434;
+}
+
+#topmenu a:hover {
+    color: #07689F;
+    text-decoration: none;
+}
