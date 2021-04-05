@@ -26,6 +26,49 @@
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
+/* Course Info */
+#info {
+    margin-top: -25px;
+}
+
+#info .card {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto Medium', Arial, sans-serif;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+}
+
+@media screen and (max-width: 1199px) {
+    #info .card {
+        width: 90% !important;
+        margin: auto;
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Roboto Medium', Arial, sans-serif;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.25); 
+    }
+}
+
+#info .card:hover {
+    transform: none;
+    transition: none;
+}
+
+#info .card .row [class^="col-"] {
+    text-align: center;
+    margin: auto 0;
+}
+
+#info .icon-mobile {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .js-read-more {
     font-size: 14px;
 }

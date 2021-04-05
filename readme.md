@@ -20,3 +20,6 @@
 - 8 Maret 2021: Sign In Page (Desktop & Mobile), Sign Up Page (Desktop & Mobile), Forgot Password Page (Desktop & Mobile), Payment Success Page (Desktop & Mobile), Payment Page (Desktop & Mobile), Shopping Cart Page (Desktop & Mobile)
 - 9 Maret 2021: Credit Card Page (Desktop & Mobile), QC
 - 25 Maret 2021: Error 404 Page (Desktop & Mobile), Error 500 Page (Desktop & Mobile), Under Construction Page (Desktop & Mobile), Maintenance Page (Desktop & Mobile)
+- 31 Maret 2021: Change Password Page, Edit Profile Page, My Account Page, Redeem Voucher Page, Transaction History Page
+- 1 April 2021: Receipt, Transaction History Page.
+- 5 April 2021: Perbaikan Halaman Course Detail.
