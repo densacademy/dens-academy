@@ -1,3 +1,17 @@
+// select all checkbox
+function selectAll(source) {
+    checkboxes = document.getElementsByName('select');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+      checkboxes[i].checked = source.checked;
+    }
+}
+
+// remove all checkbox
+function removeAll() {
+    $('input[type=checkbox]').prop('checked', false);
+}
+
+// add or reduce quantity
 $('.minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;

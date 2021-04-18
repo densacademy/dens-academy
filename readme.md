@@ -23,3 +23,5 @@
 - 31 Maret 2021: Change Password Page, Edit Profile Page, My Account Page, Redeem Voucher Page, Transaction History Page
 - 1 April 2021: Receipt, Transaction History Page.
 - 5 April 2021: Perbaikan Halaman Course Detail.
+- 14 April 2021: Upload Group 5 ke Development Server.
+- 18 April 2021: Perbaikan Header (Penambahan animasi dropdown), Perbaikan CSS, Penambahan Autoplay Slider Banner halaman utama

@@ -12,9 +12,27 @@
     top: 100px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    #account .contact-person .contact-email {
+        width: 100%; margin: 0 0 10px 30px;
+    }
+
+    #account .contact-person .contact-instagram {
+        width: 100%; margin: 0 0 10px 30px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #account .contact-person {
         display: -webkit-box !important;
+    }
+
+    #account .contact-person .contact-email {
+        width: 48%; margin: 0 0 10px 30px;
+    }
+
+    #account .contact-person .contact-instagram {
+        width: 38%; margin: 0 0 10px 30px;
     }
 }
 
@@ -108,6 +126,11 @@
     border: none;
     margin-left: 15px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+#daterange input:focus{
+    outline: none;
 }
 
 #account .card .badge-primary {
@@ -165,4 +188,10 @@
     padding: 7px 31px;
     font-family: 'Montserrat Semibold', Arial, sans-serif;
     display: inline-block;
+}
+
+#account .btn-yellow:hover {
+    background: #07689f;
+    border: 1px solid #07689f;
+    color: #ffffff;
 }
