@@ -1,0 +1,328 @@
+.card-button {
+    padding: 15px;
+    display: flex;
+    align-items:center;
+    border: 1px solid rgba(204,204,204,0.5);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.card-button .icon {
+    width: 36px;
+    height: auto;
+    margin: auto 15px auto 0;
+}
+
+.card-button h6 {
+    width: 60%;
+    margin: auto 0;
+    color: #343434;
+}
+
+.card-button:hover h6 {
+    color: #2b90c9;
+}
+
+.card-button:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    border: 1px solid rgba(43,144,201,0.6);
+    /* box-shadow: 0 0 20px 0 rgba(43,144,201,0.6); */
+}
+
+@media screen and (max-width: 991px) {
+    .card-button {
+        border: none;
+        cursor: pointer;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    .card-button:hover {
+        transform: none;
+        transition: none;
+        border: none;
+    }
+    .card-button .icon {
+        width: 46px;
+        margin: auto;
+    }
+    .card-button h6 {
+        color: #343434;
+        display: block !important;
+        text-align: center;
+        font-family: 'Roboto', Arial, sans-serif;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    hr {
+        margin: 30px 0 !important;
+    }
+}
+
+/* Card Progress */
+.card-progress::before{
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    content: '';
+    background: #AC2A49;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    height: 20px;
+    width: 20px;
+    transform : rotate(45deg);
+    z-index: -1;
+  }
+  
+  .card-progress::after{
+    position: absolute;
+    content: attr(data-label);
+    top: 10px;
+    left: -15px;
+    padding: 5px 0 0 0;
+    font-size: 14px;
+    width: 75px;
+    height: 30px;
+    background: #FF577F;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+.card-progress {
+    padding: 15px;
+    display: flex;
+    align-items:center;
+    border: 1px solid rgba(204,204,204,0.5);
+    border-radius: 7px;
+    background: #ffffff;
+    z-index: 1;
+    position: relative;
+}
+
+.card-progress:hover {
+    transform: scale(1.04);
+    transition: .3s;
+    border: 1px solid #ffffff;
+    border: 1px solid rgba(43,144,201,0.6);
+    /* box-shadow: 0 0 20px 0 rgba(43,144,201,0.6); */
+}
+
+.card-progress:hover::before {
+    transform: scale(1.04) rotate(45deg);
+    transition: .3s;
+    left: -11px;
+    z-index: -1;
+}
+
+.card-progress:hover::after {
+    transform: scale(1.04);
+    transition: .3s;
+    left: -14px;
+}
+
+.card-progress .course-image {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-progress h6 {
+    margin-bottom: 5px;
+}
+
+.card-progress .teacher {
+    color: #9B9B9B;
+    font-size: 14px;
+}
+
+.card-progress .info .icon {
+    width: 14px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.card-progress span {
+    margin: auto 10px auto 0;
+    color: #07689F;
+    font-size: 14px;
+}
+
+.card-progress .percentage {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.card-progress .percentage span {
+    color: #343434;
+    font-size: 13px;
+    margin: 0;
+}
+
+.card-progress .progress {
+    background-color: #F5F5F5;
+    height: 15px;
+    border-radius: 3px;
+    clear: both;
+}
+
+.card-progress .progress-bar {
+    background-color: #2B90C9;
+}
+
+.card-progress .btn-start {
+    font-size: 14px;
+    background: #2B90C9;
+    color: #fff;
+    padding: 5px 0;
+    /* margin: 5px 0; */
+}
+
+.card-progress .btn-start:hover {
+    background: #FFC93C;
+    color: #343434 !important;
+    transition: .3s;
+}
+
+/* Owl Carousel Patch */
+#mycourses-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+#mycourses-carousel .owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+#mycourses-carousel .owl-item.active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+    #mycourses-carousel .owl-stage {
+        padding-left: 10px !important;
+    }
+    #mycourses-carousel .owl-item {
+        opacity: 1 !important;
+    }
+    .card-progress .label {
+        margin: 0;
+    }
+    .card-progress .info {
+        display: block;
+        margin: 5px 0;
+    }
+    .card-progress:hover {
+        transform: none;
+    }
+    .card-progress:hover::before {
+        transform: none rotate(45deg);
+        transition: .3s;
+        left: -10px;
+    }
+    .card-progress:hover::after {
+        transform: none;
+        transition: .3s;
+        left: -15px;
+    }
+    .card-progress .progress {
+        display: none;
+    }
+}
+
+/* My Courses */
+#my-courses .card {
+    padding: 50px;
+    border: 1px solid rgba(204,204,204,0.5);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+    #my-courses .card {
+        padding: 5px;
+        border: none;
+    }
+}
+
+#my-courses .card:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none;
+}
+
+#my-courses .card-progress {
+    margin-bottom: 20px;
+}
+
+#my-courses .nav-pills {
+    margin-bottom: 30px;
+}
+
+#my-courses .nav-link {
+    border: 1px solid #B9B9B9;
+    color: #585858;
+    font-size: 14px;
+    padding: 7px 14px;
+    margin-right: 10px;
+}
+
+#my-courses .nav-link.active {
+    border: 1px solid #07689F !important;
+    color: #07689F !important;
+    background-color: #DEF0FB !important;
+}
+
+#my-courses .nav-link:hover {
+    border: 1px solid #07689F !important;
+    color: #07689F !important;
+    background-color: #DEF0FB !important;
+}
+
+#my-courses .page-item.active .page-link {
+    background: #2B90C9;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#my-courses .pagination {
+    margin: 10px 0;
+}
+
+#my-courses .page-link {
+    color: #343434;
+    border: none;
+    padding: 7px 14px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+#my-courses .page-nav:hover {
+    background: none !important;
+    opacity: 0.5;
+}
+
+#my-courses .page-nav.disabled {
+    opacity: 0.5;
+}
+
+#my-courses .page-link:hover {
+    background: #2B90C9;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Helper class */
+hr {
+    margin: 50px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}

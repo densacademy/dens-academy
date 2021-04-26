@@ -101,3 +101,13 @@ ol li {
     padding-left: 15px;
     font-size: 14px;
 }
+
+/* Equal row height */
+.row-eq-height {
+    overflow: hidden;
+}
+
+.row-eq-height [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
