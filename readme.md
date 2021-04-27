@@ -25,4 +25,4 @@
 - 5 April 2021: Perbaikan Halaman Course Detail.
 - 14 April 2021: Upload Group 5 ke Development Server.
 - 18 April 2021: Perbaikan Header (Penambahan animasi dropdown), Perbaikan CSS, Penambahan Autoplay Slider Banner halaman utama
-- 26 April 2021: Course Management Page (Desktop & Mobile), My Courses all Page (Desktop & Mobile)
+- 26 April 2021: Course Management Page (Desktop & Mobile), My Courses all, ongoing, finished Page (Desktop & Mobile)

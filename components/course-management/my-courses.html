@@ -6,24 +6,24 @@
 
         <!-- desktop nav tab -->
         <div class="col-lg-3 d-none d-lg-block ">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a href="#" class="list-group-item list-group-item-action active">Semua</a>
-                <a href="#" class="list-group-item list-group-item-action">Berlangsung</a>
-                <a href="#" class="list-group-item list-group-item-action">Selesai</a>
+            <div class="my-courses-menu list-group" role="tablist">
+                <a href="#" class="list-group-item list-group-item-action tab active" data-filter="all">Semua</a>
+                <a href="#" class="list-group-item list-group-item-action tab" data-filter="ongoing">Berlangsung</a>
+                <a href="#" class="list-group-item list-group-item-action tab" data-filter="finished">Selesai</a>
             </div>
         </div>
 
         <!-- mobile nav tab -->
         <div class="col-12 d-block d-lg-none ">
-            <ul class="nav nav-pills">
+            <ul class="my-courses-menu nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Semua</a>
+                    <a class="nav-link tab active" href="#" data-filter="all">Semua</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Berlangsung</a>
+                    <a class="nav-link tab" href="#" data-filter="ongoing">Berlangsung</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Selesai</a>
+                    <a class="nav-link tab" href="#" data-filter="finished">Selesai</a>
                 </li>
               </ul>
         </div>
@@ -34,7 +34,7 @@
             <div class="card">
 
                 <!-- card -->
-                <div class="card-progress" data-label="1 Kuota">
+                <div class="card-progress" data-cat="ongoing" data-label="1 Kuota">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course1.jpg" class="course-image img-fluid" alt="">
@@ -68,7 +68,7 @@
 
 
                 <!-- card -->
-                <div class="card-progress" data-label="5 Kuota">
+                <div class="card-progress" data-cat="ongoing"  data-label="5 Kuota">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course2.jpg" class="course-image img-fluid" alt="">
@@ -84,7 +84,7 @@
                                 <div class="col-7 col-md-9 align-self-center">
                                     <div class="percentage d-flex justify-content-between">
                                         <span>Progress</span>
-                                        <span>0%</span>
+                                        <span>25%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -101,7 +101,7 @@
                 <!-- card -->
 
                 <!-- card -->
-                <div class="card-progress" data-label="1 Kuota">
+                <div class="card-progress" data-cat="ongoing" data-label="1 Kuota">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course3.jpg" class="course-image img-fluid" alt="">
@@ -117,7 +117,7 @@
                                 <div class="col-7 col-md-9 align-self-center">
                                     <div class="percentage d-flex justify-content-between">
                                         <span>Progress</span>
-                                        <span>0%</span>
+                                        <span>50%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -134,7 +134,7 @@
                 <!-- card -->
 
                 <!-- card -->
-                <div class="card-progress" data-label="1 Kuota">
+                <div class="card-progress" data-cat="finished" data-label="1 Kuota">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course4.jpg" class="course-image img-fluid" alt="">
@@ -150,7 +150,7 @@
                                 <div class="col-7 col-md-9 align-self-center">
                                     <div class="percentage d-flex justify-content-between">
                                         <span>Progress</span>
-                                        <span>0%</span>
+                                        <span>100%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -186,3 +186,5 @@
 
         </div>
 </div>
+
+<script src="/js/my-courses.js"></script>
