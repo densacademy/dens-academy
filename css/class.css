@@ -1,0 +1,209 @@
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+#topmenu .progress-bar {
+    background-color: #2B90C9;
+}
+
+.left {
+    /* height:100%; */
+    position: absolute;
+    top: 67px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto !important; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow: visible;
+        height: 100%;
+        background-color: #F5FBFF;
+    }
+
+    #content {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .left {
+        position: relative;
+        top: 0;
+        overflow: auto !important;
+        padding: 0;
+    }
+
+    .left .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.hide {
+    display: none;
+}
+
+/* Class Card */
+.class-card {
+    border-radius: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 hsl(0deg 0% 74% / 75%);
+    background-color: #ffffff;
+}
+
+/* Exam */
+@media screen and (max-width: 991px) {
+    #exam {
+        padding: 30px;
+    }
+}
+
+.btn-exam {
+    border: 1px solid rgba(204,204,204,0.75);
+    color: #343434;
+    background: none;
+    font-size: 14px;
+    padding: 7px 24px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.btn-exam:hover {
+    background: #2B90C9;
+    border: 1px solid #2B90C9;
+    color: #fff !important;
+}
+
+/* Finish (Show Certificate & Score Results) */
+#finish .frame {
+    background-color: #F5FBFF;
+    padding: 30px;
+    text-align: center;
+}
+
+#score [class*="col-"] {
+    margin-bottom: 10px;
+}
+
+#score .title {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#score .result {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+    #finish {
+        padding: 30px;
+    }
+
+    #finish .frame {
+        padding: 10px;
+    }
+
+    #score .title {
+        font-size: 14px;
+    }
+}
+
+/* Answers */
+@media screen and (max-width: 991px) {
+    #answers {
+        padding: 30px;
+    }
+}
+
+#answers span {
+    margin: 5px 0;
+}
+
+#answers span {
+    font-size: 14px;
+}
+
+/* Navigation Buttons */
+.btn-outline {
+    border: 1px solid rgba(204,204,204,0.75);
+    color: #343434;
+    font-size: 14px;
+    padding: 7px 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.btn-outline:hover {
+    background: #FFC93C;
+    border: 1px solid #FFC93C;
+    color: #343434;
+}
+
+.btn-yellow {
+    background: #FFC93C;
+    border: 1px solid #FFC93C;
+    color: #343434;
+    font-size: 14px;
+    padding: 7px 14px;
+    font-family: 'Montserrat Semibold', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.btn-yellow:hover {
+    background: #07689F;
+    border: 1px solid #07689F;
+    color: #fff !important;
+}
+
+@media screen and (min-width: 577)and (max-width: 991px) {
+    .bottom-nav {
+        display: inline;
+        width: 100%;
+    }
+
+    .btn-outline, .btn-yellow {
+        width: 48%;
+        float: left;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bottom-nav {
+        display: inline;
+        width: 100%;
+    }
+
+    .btn-outline, .btn-yellow {
+        width: 48%;
+        float: left;
+        font-size: 14px;
+        padding: 7px 0;
+    }
+
+    .btn-outline:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .btn-outline:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .btn-yellow:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .btn-yellow:nth-child(3) {
+        margin-right: 5px;
+    }
+
+}

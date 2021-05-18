@@ -1,0 +1,512 @@
+<link rel="stylesheet" href="/css/course-management.css">
+<link rel="stylesheet" href="/css/modal.css">
+<link rel="stylesheet" href="/css/list-group.css">
+<link rel="stylesheet" href="/vendor/bootstrap-icons/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/faq.css">
+
+<div id="courses" class="container mt-5">
+    <div class="row">
+
+        <!-- desktop nav tab -->
+        <div class="col-lg-3 d-none d-lg-block ">
+            <div class="courses-menu list-group" role="tablist">
+                <a href="#" class="list-group-item list-group-item-action tab active" data-filter="pelajaran">Pelajaran</a>
+                <a href="#" class="list-group-item list-group-item-action tab" data-filter="pelajar">Pelajar</a>
+                <a href="#" class="list-group-item list-group-item-action tab" data-filter="riwayat">Riwayat</a>
+            </div>
+        </div>
+
+        <!-- mobile nav tab -->
+        <div class="col-12 d-block d-lg-none ">
+            <ul class="courses-menu nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link tab active" href="#" data-filter="pelajaran">Pelajaran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab" href="#" data-filter="pelajar">Pelajar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab" href="#" data-filter="riwayat">Riwayat</a>
+                </li>
+              </ul>
+        </div>
+
+        <!-- start page -->
+        <div data-cat="pelajaran" class="page col-12 col-lg-9">
+            <h4 class="mb-4">Pelajaran</h4>
+            <p>Daftar Pelajaran yang dapat ditransfer</p>
+
+            <div class="card">
+
+                <!-- card -->
+                <div class="card-assign">
+                    <div class="row row-eq-height">
+                        <div class="col-4 col-md-3 pr-0 vertical-align">
+                            <input type="radio" class="form-check-input" value="option1">
+                            <img src="/img/courses/course1.jpg" class="course-image img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="row">
+                                <div class="col-12 col-md-9">
+                                    <h6>Titik, Garis, Bidang</h6>
+                                    <span class="teacher">Dewi Nur</span> 
+                                    <span class="info">
+                                        <img src="/img/icons/durasi.png" alt="" class="icon"> 8 Bab
+                                        <img src="/img/icons/chapter.png" alt="" class="icon"> 100 Menit
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-right">
+                                    <span class="kuota">1 Kuota</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-assign">
+                    <div class="row row-eq-height">
+                        <div class="col-4 col-md-3 pr-0 vertical-align">
+                            <input type="radio" class="form-check-input" value="option1">
+                            <img src="/img/courses/course2.jpg" class="course-image img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="row">
+                                <div class="col-12 col-md-9">
+                                    <h6>Titik, Garis, Bidang</h6>
+                                    <span class="teacher">Dewi Nur</span> 
+                                    <span class="info">
+                                        <img src="/img/icons/durasi.png" alt="" class="icon"> 8 Bab
+                                        <img src="/img/icons/chapter.png" alt="" class="icon"> 100 Menit
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-right">
+                                    <span class="kuota">1 Kuota</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- navigation -->
+                <div class="bottom-nav text-right">
+                    <a href="#" class="btn btn-outline">Reset</a>
+                    <a href="#" class="btn btn-yellow" data-toggle="modal" data-target="#course-transfer">Transfer Pelajaran</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal Course Transfer to Student (if no student yet) -->
+        <div id="course-transfer-no-student" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Belum Ada Pelajar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="/img/contact.png" width="60" class="mt-2 mb-2" alt="">
+                    <p>Belum ada pelajar yang bisa di transfer pelajaran. Silahkan tambah pelajar terlebih dahulu.</p>
+                </div>
+        
+                <div class="modal-footer">
+                    <div class="col text-center">
+                    <a href="/link-account.html" class="btn btn-yellow" style="float:unset; width:auto;" data-dismiss="modal">Tambah Pelajar</a>
+                    </div>
+                </div>        
+        
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal Course Transfer to Student (has student) -->
+        <div id="course-transfer" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Transfer pelajaran ke</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center">
+
+                        <!-- Head -->
+                        <div class="text-left mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" onclick="selectAll(this)" class="form-check-input">
+                                <label class="form-check-label">Pilih Semua</label>
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card-student">
+                            <div class="row w-100 vertical-align">
+                                <div class="col-5 col-md-4 col-lg-3 vertical-align">
+                                    <input type="checkbox" name="select" class="form-check-input" value="option1">
+                                    <img src="/img/teachers/teacher1.jpg" class="student-image rounded-circle img-fluid" alt="">
+                                </div>
+                                <div class="col-7 col-md-8 col-lg-9">
+                                    <div class="row vertical-align">
+                                        <div class="col-10 col-md-7 text-left">
+                                            <h6>Renny Anggraeni</h6>
+                                            <span class="profile">Pelajar</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+
+                        <!-- card -->
+                        <div class="card-student">
+                            <div class="row w-100 vertical-align">
+                                <div class="col-5 col-md-4 col-lg-3 vertical-align">
+                                    <input type="checkbox" name="select" class="form-check-input" value="option1">
+                                    <img src="/img/teachers/teacher2.jpg" class="student-image rounded-circle img-fluid" alt="">
+                                </div>
+                                <div class="col-7 col-md-8 col-lg-9">
+                                    <div class="row vertical-align">
+                                        <div class="col-10 col-lg-7 text-left">
+                                            <h6>Arjuna</h6>
+                                            <span class="profile">Pekerja</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+
+                        <!-- card -->
+                        <div class="card-student">
+                            <div class="row w-100 vertical-align">
+                                <div class="col-5 col-md-4 col-lg-3 vertical-align">
+                                    <input type="checkbox" name="select" class="form-check-input" value="option1">
+                                    <img src="/img/teachers/teacher3.jpg" class="student-image rounded-circle img-fluid" alt="">
+                                </div>
+                                <div class="col-7 col-md-8 col-lg-9">
+                                    <div class="row vertical-align">
+                                        <div class="col-10 col-md-7 text-left">
+                                            <h6>Bambang Hartono</h6>
+                                            <span class="profile">Individual</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                </div>
+        
+                <div class="modal-footer">
+                    <div class="col bottom-nav text-right">
+                        <a href="#" class="btn btn-outline" data-dismiss="modal">Batal</a>
+                        <a href="/transfer-confirmation.html" class="btn btn-yellow">Transfer <span class="d-none d-sm-inline-block">Pelajaran</span></a>
+                    </div>
+                </div>        
+        
+            </div>
+            </div>
+        </div>
+
+        <!-- End Page -->
+
+
+        <!-- start page -->
+        <div data-cat="pelajar" class="page hide col-12 col-lg-9">
+            <h4 class="mb-4">Pelajar</h4>
+            <p>Daftar pelajar yang dapat di transfer pelajaran</p>
+
+            <div class="card">
+                <!-- Head -->
+                <div class="row vertical-align mb-4">
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input type="checkbox" onclick="selectAll(this)" class="form-check-input">
+                            <label class="form-check-label">Pilih Semua</label>
+                        </div>
+                    </div>
+                    <div class="col-8 text-right">
+                        <a href="#" class="btn btn-delete" data-toggle="modal" data-target="#delete-student">Hapus</a>
+                        <a href="/link-account.html" class="btn btn-add">Tambah Pelajar</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card-student">
+                    <div class="row w-100 vertical-align">
+                        <div class="col-4 col-md-3 vertical-align">
+                            <input type="checkbox" name="select" class="form-check-input" value="option1">
+                            <img src="/img/teachers/teacher1.jpg" class="student-image rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="row vertical-align">
+                                <div class="col-10 col-md-7">
+                                    <h6>Renny Anggraeni</h6>
+                                    <span class="profile">Pelajar</span> 
+                                </div>
+                                <!-- Desktop View -->
+                                <div class="col-2 col-md-5 d-none d-lg-inline-block text-md-right">
+                                    <a href="/learner-detail.html" class="btn btn-icons"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+
+                                <!-- Mobile View -->
+                                <div class="col-2 col-md-5 d-block d-lg-none text-md-right align-self-end">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="more bi bi-three-dots d-block d-lg-none"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="/learner-detail.html" class="dropdown-item"><i class="bi bi-eye-fill"></i>Detail Pelajar</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i>Edit Role</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i>Hapus Pelajar</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-student">
+                    <div class="row w-100 vertical-align">
+                        <div class="col-4 col-md-3 vertical-align">
+                            <input type="checkbox" name="select" class="form-check-input" value="option1">
+                            <img src="/img/teachers/teacher2.jpg" class="student-image rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="row vertical-align">
+                                <div class="col-10 col-md-7">
+                                    <h6>Arjuna</h6>
+                                    <span class="profile">Pekerja</span> 
+                                </div>
+                                <!-- Desktop View -->
+                                <div class="col-2 col-md-5 d-none d-lg-inline-block text-md-right">
+                                    <a href="/learner-detail.html" class="btn btn-icons"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+
+                                <!-- Mobile View -->
+                                <div class="col-2 col-md-5 d-block d-lg-none text-md-right align-self-end">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="more bi bi-three-dots d-block d-lg-none"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="/learner-detail.html" class="dropdown-item"><i class="bi bi-eye-fill"></i>Detail Pelajar</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i>Edit Role</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i>Hapus Pelajar</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+
+                <!-- card -->
+                <div class="card-student">
+                    <div class="row w-100 vertical-align">
+                        <div class="col-4 col-md-3 vertical-align">
+                            <input type="checkbox" name="select" class="form-check-input" value="option1">
+                            <img src="/img/teachers/teacher3.jpg" class="student-image rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="row vertical-align">
+                                <div class="col-10 col-md-7">
+                                    <h6>Tono Martono</h6>
+                                    <span class="profile">Individual</span> 
+                                </div>
+                                <!-- Desktop View -->
+                                <div class="col-2 col-md-5 d-none d-lg-inline-block text-md-right">
+                                    <a href="/learner-detail.html" class="btn btn-icons"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="#" class="btn btn-icons" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+
+                                <!-- Mobile View -->
+                                <div class="col-2 col-md-5 d-block d-lg-none text-md-right align-self-end">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="more bi bi-three-dots d-block d-lg-none"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="/learner-detail.html" class="dropdown-item"><i class="bi bi-eye-fill"></i>Detail Pelajar</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#edit-student"><i class="bi bi-pencil-fill"></i>Edit Role</a>
+                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#delete-student"><i class="bi bi-trash-fill"></i>Hapus Pelajar</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+            </div>
+
+        </div>
+        <!-- end page -->
+
+        <!-- start page -->
+        <div data-cat="riwayat" class="page hide col-12 col-lg-9">
+            <h4 class="mb-4">Riwayat Transfer Pelajaran</h4>
+            <p>Riwayat transfer pelajaran</p>
+
+
+            <!--Accordion wrapper-->
+            <div class="accordion" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion card -->
+                <div class="card">
+                  <div class="card-header" role="tab" data-toggle="collapse" href="#collapse1" aria-expanded="true">
+                      <h6>Titik, Garis, dan Bidang</h6>
+                      <p>20 Maret 2021</p>
+                  </div>
+                  <div id="collapse1" class="collapse show" role="tabpanel">
+                    <div class="card-body">
+                        <div class="name-list">
+                            <div class="row">
+                                <div class="col-6">Renny Anggraeni</div>
+                                <div class="col-6 text-right">Pelajar</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Dimas Luthfizal</div>
+                                <div class="col-6 text-right">Pekerja</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Muhammad Faizal Akbar</div>
+                                <div class="col-6 text-right">Individu</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Muhammad Bona Rizky</div>
+                                <div class="col-6 text-right">Pelajar</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Noval Alrasid</div>
+                                <div class="col-6 text-right">Pelajar</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+                    <div class="card-header" role="tab" data-toggle="collapse" href="#collapse2" aria-expanded="false">
+                        <h6>Proyeksi</h6>
+                        <p>16 Maret 2021</p>
+                    </div>
+                    <div id="collapse2" class="collapse" role="tabpanel">
+                      <div class="card-body">
+                          <div class="name-list">
+                              <div class="row">
+                                  <div class="col-6">Renny Anggraeni</div>
+                                  <div class="col-6 text-right">Pelajar</div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-6">Dimas Luthfizal</div>
+                                  <div class="col-6 text-right">Pekerja</div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-6">Muhammad Faizal Akbar</div>
+                                  <div class="col-6 text-right">Individu</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+                    <div class="card-header" role="tab" data-toggle="collapse" href="#collapse3" aria-expanded="false">
+                        <h6>Dasar Desain Grafis</h6>
+                        <p>5 Maret 2021</p>
+                    </div>
+                    <div id="collapse3" class="collapse" role="tabpanel">
+                      <div class="card-body">
+                          <div class="name-list">
+                              <div class="row">
+                                  <div class="col-6">Renny Anggraeni</div>
+                                  <div class="col-6 text-right">Pelajar</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card -->
+
+            </div>
+            <!-- Accordion Wrapper -->
+
+        </div>
+        <!-- end page -->
+            
+    </div>
+    <!-- End Row -->
+
+</div>
+
+<!-- Modal Edit Role Student / Learner -->
+<div id="edit-student" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Role</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Pelajar</option>
+                <option>Pekerja</option>
+                <option>Individu</option>
+            </select>
+        </div>
+  
+        <div class="modal-footer">
+            <div class="col text-center">
+              <a href="#" class="btn btn-outline" data-dismiss="modal">Batal</a>
+              <a href="#" class="btn btn-yellow" data-dismiss="modal">Simpan</a>
+            </div>
+        </div>        
+  
+      </div>
+    </div>
+</div>
+
+<!-- Modal Delete Student / Learner -->
+<div id="delete-student" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hapus Pelajar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+            <p>Apa kamu yakin ingin menghapus?
+            <br>Renny Anggraeni - <span class="grey">Pelajar</span></p>
+        </div>
+  
+          <div class="modal-footer">
+            <div class="col text-center">
+              <a href="#" class="btn btn-outline" data-dismiss="modal">Batal</a>
+              <a href="#" class="btn btn-yellow" data-dismiss="modal">Hapus</a>
+            </div>
+          </div>        
+  
+      </div>
+    </div>
+</div>
+
+<script src="/js/course-assignment.js"></script>

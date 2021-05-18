@@ -254,6 +254,12 @@
     color: #343434;
 }
 
+@media screen and (max-width: 576px) {
+    .course-lists .card-title {
+        white-space: nowrap;
+    }
+}
+
 .course-lists .card-total-courses {
     color: #9B9B9B;
     font-size: 14px;
@@ -310,6 +316,8 @@
     float: none;
     display: table-cell;
     vertical-align: top;
+    margin-bottom: unset;
+    padding-bottom: unset;
 }
 
 .course-lists .row-eq-height .image {

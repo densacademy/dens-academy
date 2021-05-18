@@ -26,3 +26,12 @@
 - 14 April 2021: Upload Group 5 ke Development Server.
 - 18 April 2021: Perbaikan Header (Penambahan animasi dropdown), Perbaikan CSS, Penambahan Autoplay Slider Banner halaman utama
 - 26 April 2021: Course Management Page (Desktop & Mobile), My Courses all, ongoing, finished Page (Desktop & Mobile)
+- 28 April 2021: My Class Page Video, PDF Viewer, Exam (Desktop & Mobile), Add Modal Bounce Animation
+- 29 April 2021: Finish Exam Modal (Dekstop & Mobile), Score & Certificate (Desktop & Mobile), Answers (Desktop & Mobile)
+- 3 May 2021: Course Assignment Course (Desktop & Mobile), Course Assignment Learners (Desktop & Mobile), Course Assignment History (Desktop & Mobile), Overlay Delete Learner (Desktop & Mobile), Overlay Edit Learner (Desktop & Mobile), Search Result (Desktop & Mobile)
+- 4 May 2021: Certificate List (Desktop & Mobile), Overlay View Certificate (Desktop & Mobile), Verification Success (Desktop & Mobile)
+- 5 May 2021: Overlay Assign Courses to Learner (Desktop & Mobile), Overlay Assign Courses to Learner No Learners Yet (Desktop & Mobile), Overlay Transfer Pelajaran (Desktop & Mobile)
+- 10 May 2021: Link Account (Desktop & Mobile), Account Verification (Desktop & Mobile)
+- 11 May 2021: Course Report (Desktop & Mobile)
+- 17 May 2021: Course Report Detail (Desktop & Mobile), Overlay View Certificate in Course Report (Desktop & Mobile), Learner Detail (Desktop & Mobile), Course Report Detail Learner (Desktop & Mobile)
+- 18 May 2021: Transfer Confirmation (Desktop & Mobile), AlertifyJS

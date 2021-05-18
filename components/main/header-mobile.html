@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/mobile-header.css">
+<link rel="stylesheet" href="/vendor/bootstrap-icons/bootstrap-icons.css">
 
 <nav id="mobile-navbar" class="navbar d-block d-lg-none">
     <div class="container">
@@ -7,7 +8,14 @@
                 <a href="javascript:window.history.back();"><img src="/img/icons/back.png" alt=""></a> <h5>Page Title</h5>
             </div>
             <div class="col nopadding text-right">
-                <a href="#"><img src="/img/icons/search-white.png" alt=""></a>
+
+                <div id="expanding-search">
+                    <form action="/search.html">
+                        <input type="search" id="search-input" placeholder="cari..." />
+                        <label for="search"></label>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>

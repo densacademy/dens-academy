@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="/css/modal.css">
+<link rel="stylesheet" href="/css/course-management.css">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h4>Transfer Pelajaran</h4>
+            <p>Anda akan melakukan transfer pelajaran dengan rincian sebagai berikut :</p>
+            
+            <!-- card -->
+            <div class="card-assign">
+                <div class="row row-eq-height">
+                    <div class="col-4 col-md-3 pr-0 vertical-align">
+                        <img src="/img/courses/course1.jpg" class="course-image img-fluid" alt="">
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <h6>Titik, Garis, Bidang</h6>
+                                <span class="teacher">Dewi Nur</span> 
+                                <span class="info">
+                                    <img src="/img/icons/durasi.png" alt="" class="icon"> 8 Bab
+                                    <img src="/img/icons/chapter.png" alt="" class="icon"> 100 Menit
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-4 text-left text-md-right">
+                                <span class="kuota">3 Kuota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
+            <p class="mt-4">Transfer pelajaran kepada:</p>
+            
+            <!-- card -->
+            <div class="card-student mb-3">
+                <div class="row vertical-align">
+                    <div class="col-4 col-md-3 col-lg-4 vertical-align">
+                        <img src="/img/teachers/teacher1.jpg" class="student-image rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row vertical-align">
+                            <div class="col-10 col-md-7 text-left">
+                                <h6>Renny Anggraeni</h6>
+                                <span class="profile">Pelajar</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
+            <!-- card -->
+            <div class="card-student mb-3">
+                <div class="row vertical-align">
+                    <div class="col-4 col-md-3 col-lg-4 vertical-align">
+                        <img src="/img/teachers/teacher3.jpg" class="student-image rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row vertical-align">
+                            <div class="col-10 col-md-7 text-left">
+                                <h6>Bambang Hartono</h6>
+                                <span class="profile">Pekerja</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
+            <!-- card -->
+            <div class="card-student mb-3">
+                <div class="row vertical-align">
+                    <div class="col-4 col-md-3 col-lg-4 vertical-align">
+                        <img src="/img/teachers/teacher5.jpg" class="student-image rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row vertical-align">
+                            <div class="col-10 col-md-7 text-left">
+                                <h6>Jessica Simpson</h6>
+                                <span class="profile">Individu</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
+            <div class="row vertical-align">
+                <div class="col-12 col-lg-7 col-xl-8">
+                    <p class="mb-0">Catatan: Setiap transfer pelajaran yang dilakukan akan mengurangi kuota pelajaran yang kamu miliki.</p>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-4">
+                    <div class="bottom-nav float-right mt-4 mb-4">
+                        <a href="#" class="prev btn btn-outline">Batal</a>
+                        <a href="#" onclick="transferSuccess()" class="btn btn-yellow">Lanjutkan</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/vendor/alertifyjs/css/alertify.min.css">
+<script src="/vendor/alertifyjs/alertify.min.js"></script>
+<script>
+    function transferSuccess() {
+        alertify.success('Transfer pelajaran berhasil!');
+        window.setTimeout(function () {
+            window.location.href = '/course-assignment.html';
+        }, 3000);
+    }
+</script>

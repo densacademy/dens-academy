@@ -1,0 +1,261 @@
+<link rel="stylesheet" href="/css/modal.css">
+<link rel="stylesheet" href="/css/course-management.css">
+<link rel="stylesheet" href="/vendor/fontawesome/css/fontawesome.min.css" />
+<link rel="stylesheet" href="/vendor/fontawesome/css/solid.min.css" />
+
+<div id="courses" class="container mt-lg-5">
+    <div class="row">
+
+        <!-- desktop -->
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="card p-4 mt-0">
+                <div class="profile p-3 mb-1 text-center">
+                    <img src="/img/teachers/teacher4.jpg" class="img-fluid rounded-circle mb-3" alt="">
+                    <h6>Muhammad Adi</h6>
+                </div>
+                <hr class="m-0">
+                <div class="profile-detail mt-4">
+                    <p class="label">Email</p><p>muhammad_adi@gmail.com</p>
+                    <p class="label">Nomor Handphone</p><p>081213141516</p>
+                    <p class="label">Instagram</p><p>@muhammad_adi</p>
+                    <p class="label">Jenis Kelamin</p><p>Laki-laki</p>
+                    <p class="label">Tanggal Lahir</p><p>12 Januari 2004</p>
+                    <p class="label">Alamat</p><p>Jl. Daan mogot KM. 15.6 RT. 001/012 No. 68, Kalideres, Jakarta Barat</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="col-12 d-block d-lg-none">
+            <div class="row vertical-align">
+                <div class="col-5 col-sm-3 pt-4">
+                    <img src="/img/teachers/teacher4.jpg" class="img-fluid rounded-circle mb-3" alt="">
+                </div>
+                <div class="col-7 col-sm-9 p-0">
+                    <h6>Muhammad Adi</h6>
+                </div>
+            </div>
+            
+            <div class="profile-detail-mobile">
+                <input type="checkbox" class="read-more-state" id="post-1" />
+                <div class="read-more-wrap">
+                    <p class="label mt-3">Email</p><p>muhammad_adi@gmail.com</p>
+                    <hr class="m-0">
+                    <p class="label mt-3">Nomor Handphone</p><p>081213141516</p>
+                    <hr class="m-0">
+                    <p class="label mt-3">Instagram</p><p>@muhammad_adi</p>
+                    <hr class="m-0">
+                    <div  class="read-more-target">
+                        <p class="label mt-3 read-more-target">Jenis Kelamin</p><p class="read-more-target">Laki-laki</p>
+                        <hr class="m-0 read-more-target">
+                        <p class="label mt-3 read-more-target">Tanggal Lahir</p><p class="read-more-target">12 Januari 2004</p>
+                        <hr class="m-0 read-more-target">
+                        <p class="label mt-3 read-more-target">Alamat</p><p class="read-more-target">Jl. Daan mogot KM. 15.6 RT. 001/012 No. 68, Kalideres, Jakarta Barat</p>
+                    </div>
+                </div>
+                <label for="post-1" class="read-more-trigger"></label>
+            </div>
+        </div>
+
+        <!-- Laporan Pelajaran -->
+        <div class="col-lg-9">
+            <h4 class="mb-4 d-none d-lg-block">Laporan Pelajaran</h4>
+
+            <div class="card">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h5>Titik, Garis, dan Bidang</h5>
+                        <span class="grey">Dewi Nur</span> 
+                    </div>
+                    <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-right">
+                        <span>Progress Keseluruhan</span>
+                        <h5>100%</h5>
+                    </div>
+                </div>
+
+                <hr class="mt-4 mb-4">
+
+                    <!-- if no score result yet
+                        <p class="grey text-center m-0">Nilainya belum ada nih, segera selesaikan pelajaran kamu ya.</p>
+                    -->
+                    <div class="row">
+                        <div class="col-4 col-md text-md-center">
+                            <p>Nilai Kamu</p>
+                            <img src="/img/icons/score.png" alt="">
+                        </div>
+                        <div class="col-4 col-md text-md-center">
+                            <p>Jawaban Benar</p>
+                            <h5>4</h5>
+                        </div>
+                        <div class="col-4 col-md text-md-center">
+                            <p>Jawaban Salah</p>
+                            <h5>1</h5>
+                        </div>
+                        <div class="col-4 col-md text-md-center">
+                            <p>Waktu</p>
+                            <h5>10:55</h5>
+                        </div>
+                        <div class="col-4 col-md text-md-center">
+                            <p>Presentase Nilai</p>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-2 size-14 text-right" data-toggle="modal" data-target="#modal-certificate">Lihat Sertifikat</a>
+
+                <hr class="mt-4 mb-4">
+
+                <h5 class="mb-3">Progress</h5>
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Titik Pada Garis
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Ulasan Bidang
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Titik Pada Bidang
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Garis Berpotongan dan Berimpit
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Garis Berpotongan dan Sejajar
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+                <!-- card -->
+                <div class="card-progress no-before">
+                    <div class="w-100">
+                        <h6>
+                            Garis Sejajar dan Bersilangan
+                            <span class="info ml-md-3">
+                                <img src="/img/icons/durasi.png" alt="" class="icon"> 18 Menit
+                            </span>
+                        </h6>
+                        <div class="w-100">
+                            <div class="percentage d-flex justify-content-between">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="progress d-flex">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Modal Certificate -->
+<div id="modal-certificate" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <!--Content-->
+        <div class="modal-content m-0 p-0">
+            <!--Body-->
+            <div class="modal-body m-0 p-0 text-center">
+                <a href="#" class="float-right" data-dismiss="modal"><i class="icon-close bi bi-x"></i></a>
+                <img src="/img/certificate.jpg" class="img-certificate img-fluid" alt="">
+                <a href="/pdf/certificate.pdf"><i class="bi bi-download"></i> Download Sertifikat</a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal Certificate -->

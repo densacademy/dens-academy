@@ -1,7 +1,7 @@
 var cards = $('.card-progress');
 
 // Filter function
-$( ".my-courses-menu .tab" ).click(function() { 
+$( ".courses-menu .tab" ).click(function() { 
     // Get data of category
 
     var customType = $( this ).data('filter'); // category
@@ -20,7 +20,7 @@ $( "[data-filter='all']" ).click(function() {
 });
 
 // Navigation Tab Active on Click
-$(".my-courses-menu .tab").click(function() {
+$(".courses-menu .tab").click(function() {
     $(".active").removeClass("active");
     $(this).addClass("active");
 });

@@ -42,6 +42,12 @@
     color: #07689F;
 }
 
+.accordion .card-header p {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #9B9B9B;
+}
+
 .accordion .card-header .icon {
     text-align: right;
 }

@@ -1,0 +1,158 @@
+#class-syllabus {
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA;
+    height:100%;
+    position: absolute;
+    top: 67px;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    #class-syllabus {
+        position: relative;
+        top: 0;
+        overflow: auto !important;
+        padding: 20px !important;
+        background: #F5FBFF !important;
+    }
+}
+
+#class-syllabus .scroller {
+    overflow-y: scroll;
+    position: absolute;
+    height: 100%;
+}
+
+#class-syllabus .info {
+    font-size: 14px;
+}
+
+#class-syllabus .accordion {
+    margin: 0;
+}
+
+#class-syllabus .card {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+#class-syllabus .card:hover {
+    transform: none;
+    transition: none;
+}
+
+#class-syllabus .card-header {
+    /* border-top: 1px solid rgba(0,0,0,.125); */
+    background-image: url('/img/icons/down.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+    cursor: pointer;
+    border-radius: 0;
+    padding-right: 40px;
+}
+
+#class-syllabus .card-header:hover {
+    background-image: url('/img/icons/down_hover.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center right 15px;
+}
+
+#class-syllabus .card-header h6 {
+    margin: auto;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+    #class-syllabus .card-header h6 {
+        font-size: 14px;
+    }
+}
+
+#class-syllabus .card-header h6:hover {
+    text-decoration: none;
+    color: #07689F;
+}
+
+#class-syllabus .card-header-title {
+    background-image: none;
+    cursor: initial;
+    border-radius: 0;
+    padding-right: 40px;
+}
+
+#class-syllabus .card-header-title:hover {
+    background-image: none;
+}
+
+#class-syllabus .card-header-title h6 {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+#class-syllabus .card-header-title h6:hover {
+    color: #343434 !important;
+    text-decoration: none;
+}
+
+#class-syllabus .card-header .icon {
+    text-align: right;
+}
+
+#class-syllabus .card-body {
+    font-size: 14px;
+    padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+    #class-syllabus .card-body {
+        font-size: 13px;
+        padding: 0;
+    }
+}
+
+#class-syllabus .card-body a {
+    color: #343434;
+    display: block;
+}
+
+#class-syllabus .card-body a:hover {
+    text-decoration: none;
+    color: #07689F;
+    transition: .3s;
+}
+
+#class-syllabus .card-body ul {
+    margin: 0;
+    padding: 0px;
+}
+
+#class-syllabus .card-body ul li {
+    list-style: none;
+    margin:0;
+    padding: 7px 18px;
+    background-color: #F5FBFF;
+    cursor: pointer;
+}
+
+#class-syllabus .card-body ul li:hover {
+    background-color: #DEF0FB;
+    transition: .3s;
+}
+
+
+#class-syllabus .card-body ul li.active {
+    background-color: #DEF0FB;
+}
+
+#class-syllabus .icon {
+    width: 18px;
+    margin-right: 10px;
+}
