@@ -4,6 +4,17 @@
 <div id="cart" class="container mt-5">
     <div class="row">
 
+        <!-- if cart kosong
+        <div class="col-12 mt-4 mb-4">
+            <div class="text-center">
+                <img src="/img/icons/cart.jpg" class="" alt="">
+                <h5 class="cocogoose mt-3">Wah, keranjang pelajaranmu masih kosong</h5>
+                <p>Yuk, isi dengan pelajaran favoritmu</p>
+            </div>
+        </div>
+         -->
+
+        <!-- if cart ada isinya -->
         <div class="col-12 col-lg-8">
             <h4 class="mb-4">Keranjang</h4>
 
@@ -13,7 +24,28 @@
                 <div class="col-6 text-right"><a href="#" onclick="removeAll()">Hapus</a></div>
             </div>
 
-            <!-- cart item -->
+            <!-- cart item Paket -->
+            <div class="cart-item">
+                <div class="row vertical-align">
+                     <div class="course-checkbox col-1"><input type="checkbox" name="select"></div>
+                     <div class="course-image col-3 col-lg-2"><img src="/img/packages/packages1.jpg" class="img-fluid" alt=""></div>
+                     <div class="course-description col-8 col-lg-5">
+                         <h6 class="title"><a href="/package-course-detail.html">Paket Combo Kelas 8 SMP</a></h6>
+                         <p class="price">Rp.200.000</p>
+                         <p>(B. Indonesia, B. Inggris, Matematika)</p>
+                     </div>
+                     <div class="course-qty col-12 col-lg-4 pt-4 text-right align-self-end">
+                         <span class="mr-3">Kuota:</span>
+                         <div class="counter">
+                             <span class="minus disable-qty"></span>
+                             <input class="qty" type="text" value="1"/>
+                             <span class="plus disable-qty"></span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+
+            <!-- cart item Kursus -->
            <div class="cart-item">
                <div class="row vertical-align">
                     <div class="course-checkbox col-1"><input type="checkbox" name="select"></div>
@@ -40,7 +72,7 @@
                </div>
            </div>
 
-            <!-- cart item -->
+            <!-- cart item kursus -->
             <div class="cart-item">
                 <div class="row vertical-align">
                      <div class="course-checkbox col-1"><input type="checkbox" name="select"></div>
@@ -73,7 +105,7 @@
             <div id="cart-summary" class="card p-4">
                 <h6>Ringkasan Pembelian</h6>
                 <div class="row">
-                    <div class="col-6">Total (2 Pelajaran)</div>
+                    <div class="col-6">Total (2 Item)</div>
                     <div class="col-6 text-right">Rp. 600.000</div>
                 </div>
                 <div class="row">
@@ -89,9 +121,9 @@
                 <a href="/checkout.html" class="btn btn-block btn-yellow">Lanjut ke Pembayaran</a>
             </div>
         </div>
+        <!-- if cart ada isinya -->
 
     </div>
-
 
     <div class="row">
         <div id="popular"></div>

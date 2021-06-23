@@ -60,7 +60,7 @@ body {
 /* Exam */
 @media screen and (max-width: 991px) {
     #exam {
-        padding: 30px;
+        padding: 30px 30px 0 30px;
     }
 }
 
@@ -101,7 +101,7 @@ body {
 
 @media screen and (max-width: 991px) {
     #finish {
-        padding: 30px;
+        padding: 30px 30px 0 30px;
     }
 
     #finish .frame {
@@ -116,7 +116,7 @@ body {
 /* Answers */
 @media screen and (max-width: 991px) {
     #answers {
-        padding: 30px;
+        padding: 30px 30px 0 30px;
     }
 }
 

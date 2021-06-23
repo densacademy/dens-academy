@@ -65,7 +65,7 @@
 }
 
 /* Card Progress */
-.card-progress::before{
+.card-progress:before{
     position: absolute;
     top: 30px;
     left: -10px;
@@ -76,9 +76,14 @@
     width: 20px;
     transform : rotate(45deg);
     z-index: -1;
+    visibility: visible;
 }
 
-.card-progress::after{
+.card-progress[data-label=""]:before {
+    visibility: hidden;
+}
+
+.card-progress:after{
     position: absolute;
     content: attr(data-label);
     top: 10px;
@@ -94,11 +99,16 @@
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    visibility: visible;
+}
+
+.card-progress[data-label=""]:after {
+    visibility: hidden;
 }
 
 .card-progress {
     padding: 15px;
-    display: flex;
+    /* display: flex; */
     align-items:center;
     border: 1px solid rgba(204,204,204,0.5);
     border-radius: 7px;
@@ -133,6 +143,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 100px;
 }
 
 .card-progress h6 {
@@ -141,6 +152,11 @@
 
 .card-progress .teacher {
     color: #9B9B9B;
+    font-size: 14px;
+}
+
+.card-progress .packages {
+    color: #343434;
     font-size: 14px;
 }
 
@@ -181,16 +197,16 @@
 
 .card-progress .btn-start {
     font-size: 14px;
-    background: #2B90C9;
-    color: #fff;
+    background: #FFC93C;
+    color: #343434 !important;
     padding: 5px 0;
     /* margin: 5px 0; */
     font-family: 'Montserrat Semibold', Arial, sans-serif;
 }
 
 .card-progress .btn-start:hover {
-    background: #FFC93C;
-    color: #343434 !important;
+    background: #2B90C9;
+    color: #ffffff !important;
     transition: .3s;
 }
 

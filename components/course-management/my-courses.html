@@ -31,10 +31,49 @@
         <div class="col-12 col-lg-9">
             <h4 class="mb-4">Daftar Pelajaran</h4>
 
+            <!-- if pelajaran belum ada / kosong 
+            <div class="col-12 mt-5 mb-5">
+                <div class="text-center">
+                    <img src="/img/icons/files.jpg" alt="">
+                    <h6 class="cocogoose mt-3">Yah, belum ada pelajaran yang berlangsung atau selesai nih</h6>
+                    <p>Selesaikan pelajaranmu atau silahkan beli pelajaran terlebih dahulu ya.</p>
+                </div>
+            </div>
+            -->
+
             <div class="card">
 
+                <!-- card paket -->
+                <div class="card-progress" data-cat="" data-label="1 Kuota">
+                    <div class="row row-eq-height">
+                        <div class="col-4 col-md-3">
+                            <img src="/img/packages/packages1.jpg" class="course-image img-fluid" alt="">
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <h6>Paket Combo Kelas 8 SMP</h6>
+                            <span class="packages">(B. Indonesia, B. Inggris, Matematika)</span> 
+                            <div class="row">
+                                <div class="col-7 col-md-9 align-self-center">
+                                    <div class="percentage d-flex justify-content-between">
+                                        <span>Progress</span>
+                                        <span>0%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-md-3 align-self-end">
+                                    <a href="/class.html" class="btn btn-block btn-start">Mulai</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <!-- card -->
-                <div class="card-progress" data-cat="ongoing" data-label="1 Kuota">
+
+                <!-- card -->
+                <div class="card-progress" data-cat="ongoing" data-label="3 Kuota">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course1.jpg" class="course-image img-fluid" alt="">
@@ -68,7 +107,7 @@
 
 
                 <!-- card -->
-                <div class="card-progress" data-cat="ongoing"  data-label="5 Kuota">
+                <div class="card-progress" data-cat="ongoing"  data-label="">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course2.jpg" class="course-image img-fluid" alt="">
@@ -101,7 +140,7 @@
                 <!-- card -->
 
                 <!-- card -->
-                <div class="card-progress" data-cat="ongoing" data-label="1 Kuota">
+                <div class="card-progress" data-cat="ongoing" data-label="">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course3.jpg" class="course-image img-fluid" alt="">
@@ -134,7 +173,7 @@
                 <!-- card -->
 
                 <!-- card -->
-                <div class="card-progress" data-cat="finished" data-label="1 Kuota">
+                <div class="card-progress" data-cat="finished" data-label="">
                     <div class="row row-eq-height">
                         <div class="col-4 col-md-3">
                             <img src="/img/courses/course4.jpg" class="course-image img-fluid" alt="">
@@ -157,7 +196,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5 col-md-3 align-self-end">
-                                    <a href="#" class="btn btn-block btn-start">Laporan</a>
+                                    <a href="/course-report-detail.html" class="btn btn-block btn-start">Laporan</a>
                                 </div>
                             </div>
                         </div>
@@ -185,6 +224,7 @@
             </div>
 
         </div>
+    </div>
 </div>
 
 <script src="/js/my-courses.js"></script>

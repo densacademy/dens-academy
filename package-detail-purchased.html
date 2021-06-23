@@ -25,12 +25,10 @@
     <div id="content">
         <div id="header"></div>
         <div id="header-mobile"></div>
-        <div id="categories-kurikulum" class="container mt-5">
-            <h4>Matematika</h4>
-            <br>
-        </div>
-        <div id="course-lists"></div>
-        <div id="course-lists-mobile"></div>
+        <div id="package-detail"></div>
+        <div id="packages"></div>
+        <div id="add-cart"></div>
+        <div id="related"></div>
         <div id="footer"></div>
         <div id="bottom-menu"></div>
     </div>
@@ -56,13 +54,13 @@
             }, 2000);//wait 2 seconds
 
             // load components
-            $("#header").load("components/main/header.html"); 
-            $("#header-mobile").load("components/main/header-mobile.html"); 
-            $("#course-lists-mobile").load("components/course-lists/kurikulum-mobile.html"); 
-            $("#course-lists").load("components/course-lists/kurikulum.html"); 
-            $("#bottom-menu").load("components/main/bottom-menu.html");  
-            $("#footer").load("components/main/footer.html"); 
-
+            $("#header").load("/components/main/header-signed-in.html"); 
+            $("#header-mobile").load("/components/main/header-mobile.html"); 
+            $("#package-detail").load("/components/packages/detail.html"); 
+            $("#packages").load("/components/packages/packages-purchased.html"); 
+            $("#related").load("components/widgets/packages.html");
+            $("#bottom-menu").load("/components/main/bottom-menu.html");  
+            $("#footer").load("/components/main/footer.html"); 
         });
     </script> 
 

@@ -1,0 +1,10 @@
+#package-description {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+
+#package-description p {
+    margin: 0;
+    padding: 0;
+}

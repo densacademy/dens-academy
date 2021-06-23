@@ -50,8 +50,10 @@
     color: #fff;
     cursor: pointer;
     font-size: 15px;
+    padding: 0;
+    margin: 0;
     height: 20px;
-    /* float: right; */
+    float: right;
     outline: none;
     transition: all 0.3s ease;
     width: 20px;
@@ -81,7 +83,7 @@
     display: block;
     right: 0;
     position: absolute;
-    height: 15px;
+    height: 12px;
     transform: rotate(-45deg);
     transition: all 0.3s ease;
     width: 3px;

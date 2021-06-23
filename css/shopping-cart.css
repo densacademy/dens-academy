@@ -89,6 +89,11 @@
     vertical-align: middle;
 }
 
+.cart-item .disable-qty {
+    opacity: 0.3; 
+    pointer-events: none;
+}
+
 /* Cart Summary */
 #cart-summary {
     font-family: 'Roboto Light', Arial, sans-serif;

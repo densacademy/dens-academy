@@ -35,3 +35,8 @@
 - 11 May 2021: Course Report (Desktop & Mobile)
 - 17 May 2021: Course Report Detail (Desktop & Mobile), Overlay View Certificate in Course Report (Desktop & Mobile), Learner Detail (Desktop & Mobile), Course Report Detail Learner (Desktop & Mobile)
 - 18 May 2021: Transfer Confirmation (Desktop & Mobile), AlertifyJS
+- 14 June 2021: Additional & Revision (Shopping Cart, My Courses, Transaction History, Receipt, Course Management, Account Verification, cards.css, footer.css)
+- 16 June 2021: Patch & Revisi (Package Detail, Package Course Detail, Packages Widget, cards.css, Popular, Latest, Related Courses Widget)
+- 17 June 2021: Patch & Revisi (Change Password)
+- 19 June 2021: QC
+- 22 June 2021: Patch

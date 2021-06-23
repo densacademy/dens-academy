@@ -17,6 +17,8 @@
         top: 0;
         overflow: auto !important;
         padding: 20px !important;
+        height: auto;
+        padding: 20px !important;
         background: #F5FBFF !important;
     }
 }

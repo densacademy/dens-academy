@@ -179,19 +179,19 @@
     border: none;
 }
 
-#account .btn-yellow {
+#account .btn-biru {
     margin: 10px 0;
-    border: 1px solid #FFC93C;
-    background: #FFC93C;
-    color: #343434;
+    background: #2B90C9;
+    border: 1px solid #2B90C9;
+    color: #ffffff;
     font-size: 14px;
     padding: 7px 31px;
     font-family: 'Montserrat Semibold', Arial, sans-serif;
     display: inline-block;
 }
 
-#account .btn-yellow:hover {
-    background: #07689f;
-    border: 1px solid #07689f;
-    color: #ffffff;
+#account .btn-biru:hover {
+    border: 1px solid #FFC93C;
+    background: #FFC93C;
+    color: #343434;
 }
