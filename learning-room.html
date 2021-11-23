@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dens Academy</title>
+
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/preloader.css">
+    <link rel="stylesheet" href="/css/cards.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <div id="content">
+        <div id="header"></div>
+        <div id="header-mobile"></div>
+        <div id="learning-room"></div>
+        <div id="footer"></div>
+        <div id="bottom-menu"></div>
+    </div>
+    
+    <script src="/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script> 
+        $(function(){
+
+            var loader = $('#preloader');
+            var page = $('#content');
+
+            // hide stuff on default
+            page.hide();
+            loader.show();
+
+            // show after delay
+            setTimeout(function(){
+                loader.hide();
+                page.fadeIn('slow')
+            }, 2000);//wait 2 seconds
+
+            // load components
+            $("#header").load("/components/main/header-signed-in.html"); 
+            $("#header-mobile").load("/components/main/header-mobile.html"); 
+            $("#learning-room").load("/components/account/learning-room.html"); 
+            $("#bottom-menu").load("components/main/bottom-menu.html");  
+            $("#footer").load("/components/main/footer.html"); 
+        });
+    </script> 
+
+</body>
+</html>
